@@ -1,0 +1,182 @@
+.manic-dropdown{
+
+  select{
+    display: none;
+  }
+
+  width: 100%;
+  position: relative;
+  cursor: default;
+
+
+  .goog-menu-button{
+    display: block;
+    &:focus{
+      outline: none;
+    }
+  }
+
+  // dropdown text
+  .goog-menu-button-caption{
+    
+  }
+
+  // arrow
+  .goog-menu-button-dropdown{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+
+    &:after{
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .fa;
+      font-size: 18px;
+      line-height: 20px;                    // 
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      content: "\f107";
+      .transition-in(0.3s);
+    }
+  }
+  .goog-menu-button-open{
+    .goog-menu-button-dropdown{
+      &:after{
+        .rotation(180deg);
+      }
+    }
+  }
+
+  // list item container
+  .goog-menu {
+    cursor: default;
+    outline: none;
+    position: absolute;
+    z-index: 300000; /* Arbitrary, but some apps depend on it... */
+
+    &.scroll-version{
+      overflow-y: scroll;      // add only on long things
+      height: 250px;
+    }
+  }
+
+  // list item
+  .goog-menuitem {
+    list-style: none;
+    margin: 0;
+    position: relative;
+
+    // text
+    .goog-menuitem-content{
+
+    }
+
+    // text hover state
+    &.goog-menuitem-highlight,
+    &:hover{
+      .goog-menuitem-content{
+
+      }
+    }
+  }
+
+
+} // .manic-dropdown
+
+
+
+// MOBILE
+// @media only screen and (max-width: 767px) {
+
+// TABLET PORTRAIT
+@media only screen and (max-width: 991px) {
+
+  .manic-dropdown{
+    .goog-menu-button{
+      // display: none;
+    }
+    select{
+      // display: block;
+      position: absolute;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      .opacity-important(0);
+    }
+
+    // dropdown text
+    &:after{
+      // content: attr(data-label);
+      display: block;
+
+      line-height: 1.42857143;
+      
+      background: transparent;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      .round(0px);
+
+      position: relative;
+      z-index: 15;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      //overflow: hidden;
+    }
+
+    // arrow
+    &:before{
+      content: "";
+      display: block;
+
+      position: absolute;
+      z-index: 10;
+      top: 5px;
+      right: 5px;
+      width: 20px;
+      height: 20px;
+
+      position: absolute;
+      
+      .fa;
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+      // content: "\f107";
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+//    _____ ___  _   _ _____
+//   |  ___/ _ \| \ | |_   _|
+//   | |_ | | | |  \| | | |
+//   |  _|| |_| | |\  | | |
+//   |_|   \___/|_| \_| |_|
+//
+
+.manic-dropdown .goog-menu-button-caption,
+.manic-dropdown .goog-menuitem .goog-menuitem-content{
+}
+
+// MOBILE
+@media only screen and (max-width: 767px) {
+  .manic-dropdown:after{
+
+  }
+}

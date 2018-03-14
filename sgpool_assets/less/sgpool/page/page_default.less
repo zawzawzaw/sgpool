@@ -1,0 +1,363 @@
+//     ____  ___    _   ___   ____________
+//    / __ )/   |  / | / / | / / ____/ __ \
+//   / __  / /| | /  |/ /  |/ / __/ / /_/ /
+//  / /_/ / ___ |/ /|  / /|  / /___/ _, _/
+// /_____/_/  |_/_/ |_/_/ |_/_____/_/ |_|
+
+#page-default-banner-section {
+  background: @white;      // color of banner image
+  position: relative;
+} // #page-default-banner-section
+
+#page-default-banner-slider {
+  .page-default-banner-slider-item {
+    position: relative;
+  }  
+
+  .slick-dots {
+    right: 45px;
+    bottom: 30px;
+    text-align: right;
+
+    @media all and (max-width: 991px) {
+      right: 10px;
+      bottom: 20px;
+      position: absolute;
+    }
+  }
+}
+
+#page-default-banner-image {
+  &.short-banner {
+    .manic-image-container {
+      height: 450px;
+    }
+  }
+}
+
+#page-default-banner-image-mobile {
+  @media all and (max-width: 991px) {
+    .manic-image-container {
+      height: 450px;
+    }
+  }
+  @media all and (max-width: 480px) {
+    .manic-image-container {
+      height: 250px;
+    }
+  }
+}
+
+#page-default-banner-caption-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+
+  #page-default-banner-copy {
+    text-align: center;
+    h2 {
+      width: 100%;
+    }
+  }
+  
+  @media all and (max-width: 1024px) {
+    &.museum-version {
+      width: 80%;
+      #page-default-banner-copy {
+        color:@white;
+        width: 100%;
+      }
+    }   
+  }
+  
+}
+
+#page-default-banner-logo-container {
+  position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // width: 100%;  
+
+  bottom: 80px;
+  left: 0px;
+  width: 100%;
+
+  @media all and (max-width: 991px) {
+    
+  }
+
+} // #page-default-banner-logo-container
+
+#page-default-banner-logo {
+  width: 100%;
+  // padding-left: 50px;
+  text-align: center;  
+
+  img {
+    margin: 0 auto;
+  }
+
+  @media all and (max-width: 991px) {
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+
+} // #page-default-banner-logo
+
+#page-default-banner-copy-container {
+  position: absolute;
+  // right: 20px;
+  left: 400px;
+  bottom: 55px;
+  width: 100%;  
+
+} // #page-default-banner-copy-container
+
+#page-default-banner-copy-container-mobile {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid @border-grey;
+}
+
+#page-default-banner-copy {
+  width: 100%;
+  // padding-left: 50px;
+  // text-align: right;  
+  text-align: left;  
+  color: @white;
+  margin-left: 6%;
+
+  @media all and (max-width: 991px) {
+    color: @grey;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    .mercury-text-g2-regular;
+    // font-size: 30px;
+    font-size: 28px;
+    line-height: 38px;
+    // padding-bottom: 30px;
+    padding-bottom: 20px;
+
+    @media all and (min-width: 1500px) {
+      width: 80%;
+    }
+
+    @media all and (max-width: 991px) {
+      font-size: 21px;
+      line-height: 29px;
+      padding-bottom: 10px;
+    }
+  }
+  em {
+    .mercury-text-g2-italic;
+    // font-size: 22px;
+    font-size: 19px;
+    @media all and (max-width: 991px) {
+      font-size: 15px;    
+    }
+  }
+
+} // #page-default-banner-copy
+
+//     _______    _________   ________   ____  ____ _  __
+//    / ____/ |  / / ____/ | / /_  __/  / __ )/ __ \ |/ /
+//   / __/  | | / / __/ /  |/ / / /    / __  / / / /   /
+//  / /___  | |/ / /___/ /|  / / /    / /_/ / /_/ /   |
+// /_____/  |___/_____/_/ |_/ /_/    /_____/\____/_/|_|
+
+.page-default-event-box {
+  position: relative;
+  z-index: 3000;
+
+  &.margin-20-left {
+    margin-left: 20px;
+  }
+  &.margin-20-right {
+    margin-right: 20px;
+  }
+
+  .tag-container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: @white;
+    color: @grey;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 19px;
+    padding-right: 19px;
+    z-index: 2;      
+  }
+
+  .text-container {
+    position: absolute;
+    bottom: 48px;
+    left: 30px;
+    color: @white;
+
+    @media all and (max-width: 1280px) {
+      bottom: 78px;
+    }
+    @media all and (max-width: 1024px) {
+      bottom: 38px;
+      width: 80%;
+    }
+    h3 {
+      width: 90%;
+    }
+    p {
+      width: 90%;
+      padding-top: 5px;
+    }
+  }
+}
+
+
+//    _______  ______   _    _   _ ____
+//   | ____\ \/ /  _ \ / \  | \ | |  _ \
+//   |  _|  \  /| |_) / _ \ |  \| | | | |
+//   | |___ /  \|  __/ ___ \| |\  | |_| |
+//   |_____/_/\_\_| /_/   \_\_| \_|____/
+//
+
+.manic-expand-container{
+
+  position: relative;
+  cursor: default;
+  margin-bottom: 2px;
+
+  // line
+  &:after{
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    border-top: 1px solid #b0b0b0;
+
+    //.opacity(0.5);
+    .opacity(1);
+    .transition-in(0.3s);
+  }
+
+
+  
+
+
+
+  .manic-expand-container-title{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:before{
+      content: "";
+      display: block;
+      height: 20px;
+    }
+    &:after{
+      content: "";
+      display: block;
+      height: 20px;
+    }
+
+  }
+
+  .manic-expand-container-btn{
+    color: @grey;
+
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+    .transition-in(0.3s);
+
+    .dropdown-arrow-icon;   
+
+    &:before, &:after {
+      top: 13px;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      left: 14px;
+    }
+
+  }
+
+
+
+  .manic-expand-container-content{
+    display: none;
+    
+    &:after{
+      content: "";
+      display: block;
+      height: 80px;
+    }
+
+    &.no-spacing {
+      &:after {
+        height: 0px;
+      }
+    }
+
+  }
+
+
+
+  // expand version
+
+  &.expand-version{
+
+
+    /*
+    // line
+    &:after{
+      .opacity(0);
+      .transition-in(0.5s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.3s);
+    }
+    */
+    
+    .manic-expand-container-title{
+      h4{
+        // color: @violet;
+      }
+    }
+
+
+
+    .manic-expand-container-btn{
+      //.opacity(0);
+      .transition-in(0.5s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.3s);      
+      &:before {
+        .rotation(-45deg);
+      }
+      &:after {
+        .rotation(45deg);
+      }
+    }
+
+  }
+
+} // .manic-expand-container

@@ -1,0 +1,340 @@
+// animations must be declared on top as per websites's instructions
+// http://www.markskowrondesign.com/blog/are-your-css3-animations-broken-in-ie10-and-ie11/
+
+
+
+@-webkit-keyframes plainFadeIn {
+  0% { .opacity(0.0); }
+  100% { .opacity(1); }
+}
+@keyframes plainFadeIn {
+  0% { .opacity(0.0); }
+  100% { .opacity(1); }
+}
+
+@-webkit-keyframes plainFadeOut {
+  0% { .opacity(1); }
+  100% { .opacity(0); }
+}
+@keyframes plainFadeOut {
+  0% { .opacity(1); }
+  100% { .opacity(0); }
+}
+
+
+
+
+
+@-webkit-keyframes textFadeIn {
+  0% { .transform( translate3d(0,10px,0) ); .opacity(0.0); }
+  100% { .transform( translate3d(0,0,0) ); .opacity(1); }
+}
+@keyframes textFadeIn {
+  0% { .transform( translate3d(0,10px,0) ); .opacity(0.0); }
+  100% { .transform( translate3d(0,0,0) ); .opacity(1); }
+}
+
+@-webkit-keyframes textNoFade {
+  0% { .transform( translate3d(0,0,0) ); .opacity(1); }
+  100% { .transform( translate3d(0,0,0) ); .opacity(1); }
+}
+@keyframes textNoFade {
+  0% { .transform( translate3d(0,0,0) ); .opacity(1); }
+  100% { .transform( translate3d(0,0,0) ); .opacity(1); }
+}
+
+@-webkit-keyframes textFadeOut {
+  0% { .transform( translate3d(0,0,0) ); .opacity(1); }
+  100% { .transform( translate3d(0,10px,0) ); .opacity(0.0); }
+}
+@keyframes textFadeOut {
+  0% { .transform( translate3d(0,0,0) ); .opacity(1); }
+  100% { .transform( translate3d(0,10px,0) ); .opacity(0.0); }
+}
+
+
+
+
+
+@-webkit-keyframes leftFadeIn {
+  0% { .transform( translate3d(-20px,0,0) ); .opacity(0.0); }
+  100% { .transform( translate3d(0,0,0) ); .opacity(1); }
+}
+@keyframes leftFadeIn {
+  0% { .transform( translate3d(-20px,0,0) ); .opacity(0.0); }
+  100% { .transform( translate3d(0,0,0) ); .opacity(1); }
+}
+
+@-webkit-keyframes leftFadeOut {
+  0% { .transform( translate3d(0,0,0) ); .opacity(1); }
+  100% { .transform( translate3d(-20px,0,0) ); .opacity(0.0); }
+}
+@keyframes leftFadeOut {
+  0% { .transform( translate3d(0,0,0) ); .opacity(1); }
+  100% { .transform( translate3d(-20px,0,0) ); .opacity(0.0); }
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes rightFadeIn {
+  0% { .transform( translate3d(20px,0,0) ); .opacity(0.0); }
+  100% { .transform( translate3d(0,0,0) ); .opacity(1); }
+}
+@keyframes rightFadeIn {
+  0% { .transform( translate3d(20px,0,0) ); .opacity(0.0); }
+  100% { .transform( translate3d(0,0,0) ); .opacity(1); }
+}
+
+@-webkit-keyframes rightFadeOut {
+  0% { .transform( translate3d(0,0,0) ); .opacity(1); }
+  100% { .transform( translate3d(20px,0,0) ); .opacity(0.0); }
+}
+@keyframes rightFadeOut {
+  0% { .transform( translate3d(0,0,0) ); .opacity(1); }
+  100% { .transform( translate3d(20px,0,0) ); .opacity(0.0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes leftFadeIn2 {
+  0% { .transform( translate3d(-70px,0,0) ); }
+  100% { .transform( translate3d(0,0,0) ); }
+}
+@keyframes leftFadeIn2 {
+  0% { .transform( translate3d(-70px,0,0) ); }
+  100% { .transform( translate3d(0,0,0) ); }
+}
+
+@-webkit-keyframes leftFadeOut2 {
+  0% { .transform( translate3d(0,0,0) ); }
+  100% { .transform( translate3d(-70px,0,0) ); }
+}
+@keyframes leftFadeOut2 {
+  0% { .transform( translate3d(0,0,0) ); }
+  100% { .transform( translate3d(-70px,0,0) ); }
+}
+
+
+@-webkit-keyframes rightFadeIn2 {
+  0% { .transform( translate3d(70px,0,0) ); }
+  100% { .transform( translate3d(0,0,0) ); }
+}
+@keyframes rightFadeIn2 {
+  0% { .transform( translate3d(70px,0,0) ); }
+  100% { .transform( translate3d(0,0,0) ); }
+}
+
+@-webkit-keyframes rightFadeOut2 {
+  0% { .transform( translate3d(0,0,0) ); }
+  100% { .transform( translate3d(70px,0,0) ); }
+}
+@keyframes rightFadeOut2 {
+  0% { .transform( translate3d(0,0,0) ); }
+  100% { .transform( translate3d(70px,0,0) ); }
+}
+
+
+
+
+@-webkit-keyframes bottomFadeIn2 {
+  0% { .transform( translate3d(0,70px,0) ); }
+  100% { .transform( translate3d(0,0,0) ); }
+}
+@keyframes bottomFadeIn2 {
+  0% { .transform( translate3d(0,70px,0) ); }
+  100% { .transform( translate3d(0,0,0) ); }
+}
+
+@-webkit-keyframes bottomFadeOut2 {
+  0% { .transform( translate3d(0,0,0) ); }
+  100% { .transform( translate3d(0,70px,0) ); }
+}
+@keyframes bottomFadeOut2 {
+  0% { .transform( translate3d(0,0,0) ); }
+  100% { .transform( translate3d(0,70px,0) ); }
+}
+
+
+
+
+.fade-out{
+  -webkit-animation: plainFadeOut 0.3s both cubic-bezier(0.7,0,0.3,1);
+  animation: plainFadeOut 0.3s both cubic-bezier(0.7,0,0.3,1);
+}
+.fade-in{
+  -webkit-animation: plainFadeIn 0.3s both cubic-bezier(0.7,0,0.3,1);
+  animation: plainFadeIn 0.3s both cubic-bezier(0.7,0,0.3,1);
+}
+
+
+.text-fade-out{
+  -webkit-animation: textFadeOut 0.2s both cubic-bezier(0.7,0,0.3,1);
+  animation: textFadeOut 0.2s both cubic-bezier(0.7,0,0.3,1);
+}
+.text-fade-in{
+  -webkit-animation: textFadeIn 0.3s both cubic-bezier(0.7,0,0.3,1);
+  animation: textFadeIn 0.3s both cubic-bezier(0.7,0,0.3,1);
+}
+
+.text-no-fade{
+  -webkit-animation: textNoFade 0.4s both cubic-bezier(0.7,0,0.3,1);
+  animation: textNoFade 0.4s both cubic-bezier(0.7,0,0.3,1);
+}
+
+
+.right-fade-out{
+  -webkit-animation: rightFadeOut 0.2s both cubic-bezier(0.7,0,0.3,1);
+  animation: rightFadeOut 0.2s both cubic-bezier(0.7,0,0.3,1);
+}
+.right-fade-in{
+  -webkit-animation: rightFadeIn 0.4s both cubic-bezier(0.7,0,0.3,1);
+  animation: rightFadeIn 0.4s both cubic-bezier(0.7,0,0.3,1);
+}
+
+.left-fade-out{
+  -webkit-animation: leftFadeOut 0.2s both cubic-bezier(0.7,0,0.3,1);
+  animation: leftFadeOut 0.2s both cubic-bezier(0.7,0,0.3,1);
+}
+.left-fade-in{
+  -webkit-animation: leftFadeIn 0.4s both cubic-bezier(0.7,0,0.3,1);
+  animation: leftFadeIn 0.4s both cubic-bezier(0.7,0,0.3,1);
+}
+
+
+
+
+
+
+.right-fade-out2{
+  -webkit-animation: rightFadeOut2 0.2s both cubic-bezier(0.7,0,0.3,1);
+  animation: rightFadeOut2 0.2s both cubic-bezier(0.7,0,0.3,1);
+}
+.right-fade-in2{
+  -webkit-animation: rightFadeIn2 0.45s both cubic-bezier(0.7,0,0.3,1);
+  animation: rightFadeIn2 0.45s both cubic-bezier(0.7,0,0.3,1);
+}
+
+.left-fade-out2{
+  -webkit-animation: leftFadeOut2 0.2s both cubic-bezier(0.7,0,0.3,1);
+  animation: leftFadeOut2 0.2s both cubic-bezier(0.7,0,0.3,1);
+}
+.left-fade-in2{
+  -webkit-animation: leftFadeIn2 0.45s both cubic-bezier(0.7,0,0.3,1);
+  animation: leftFadeIn2 0.45s both cubic-bezier(0.7,0,0.3,1);
+}
+
+
+
+.bottom-fade-out2{
+  -webkit-animation: bottomFadeOut2 0.2s both cubic-bezier(0.7,0,0.3,1);
+  animation: bottomFadeOut2 0.2s both cubic-bezier(0.7,0,0.3,1);
+}
+.bottom-fade-in2{
+  -webkit-animation: bottomFadeIn2 0.45s both cubic-bezier(0.7,0,0.3,1);
+  animation: bottomFadeIn2 0.45s both cubic-bezier(0.7,0,0.3,1);
+}
+
+
+
+.animationDelay (@delay) {
+  -webkit-animation-delay: @delay !important;  
+  -moz-animation-delay:    @delay !important;
+  -ms-animation-delay:     @delay !important; 
+  -o-animation-delay:      @delay !important;  
+  animation-delay:      @delay !important; 
+}
+
+@interval: .06s;
+@intervaloffset: 0.055s;
+
+@interval2: .04s;
+@intervaloffset2: 0.0s;
+
+@dd1_time: 1 * @interval - @intervaloffset;
+@dd2_time: 2 * @interval - @intervaloffset;
+@dd3_time: 3 * @interval - @intervaloffset;
+@dd4_time: 4 * @interval - @intervaloffset;
+@dd5_time: 5 * @interval - @intervaloffset;
+@dd6_time: 6 * @interval - @intervaloffset;
+@dd7_time: 7 * @interval - @intervaloffset;
+@dd8_time: 8 * @interval - @intervaloffset;
+@dd9_time: 9 * @interval - @intervaloffset;
+@dd10_time: 10 * @interval - @intervaloffset;
+@dd11_time: 11 * @interval - @intervaloffset;
+@dd12_time: 12 * @interval - @intervaloffset;
+@dd13_time: 13 * @interval - @intervaloffset;
+@dd14_time: 14 * @interval - @intervaloffset;
+@dd15_time: 15 * @interval - @intervaloffset;
+@dd16_time: 16 * @interval - @intervaloffset;
+@dd17_time: 17 * @interval - @intervaloffset;
+@dd18_time: 18 * @interval - @intervaloffset;
+@dd19_time: 19 * @interval - @intervaloffset;
+@dd20_time: 20 * @interval - @intervaloffset;
+
+
+.dd0{ .animationDelay(0); }
+.dd1{ .animationDelay(1 * @interval - @intervaloffset); }
+.dd2{ .animationDelay(2 * @interval - @intervaloffset); }
+.dd3{ .animationDelay(3 * @interval - @intervaloffset); }
+.dd4{ .animationDelay(4 * @interval - @intervaloffset); }
+.dd5{ .animationDelay(5 * @interval - @intervaloffset); }
+.dd6{ .animationDelay(6 * @interval - @intervaloffset); }
+.dd7{ .animationDelay(7 * @interval - @intervaloffset); }
+.dd8{ .animationDelay(8 * @interval - @intervaloffset); }
+.dd9{ .animationDelay(9 * @interval - @intervaloffset); }
+.dd10{ .animationDelay(10 * @interval - @intervaloffset); }
+
+.dd11{ .animationDelay(11 * @interval - @intervaloffset); }
+.dd12{ .animationDelay(12 * @interval - @intervaloffset); }
+.dd13{ .animationDelay(13 * @interval - @intervaloffset); }
+.dd14{ .animationDelay(14 * @interval - @intervaloffset); }
+.dd15{ .animationDelay(15 * @interval - @intervaloffset); }
+.dd16{ .animationDelay(16 * @interval - @intervaloffset); }
+.dd17{ .animationDelay(17 * @interval - @intervaloffset); }
+.dd18{ .animationDelay(18 * @interval - @intervaloffset); }
+.dd19{ .animationDelay(19 * @interval - @intervaloffset); }
+.dd20{ .animationDelay(20 * @interval - @intervaloffset); }
+
+
+
+.ddd0{ .animationDelay(0); }
+.ddd1{ .animationDelay(1 * @interval2 - @intervaloffset2); }
+.ddd2{ .animationDelay(2 * @interval2 - @intervaloffset2); }
+.ddd3{ .animationDelay(3 * @interval2 - @intervaloffset2); }
+.ddd4{ .animationDelay(4 * @interval2 - @intervaloffset2); }
+.ddd5{ .animationDelay(5 * @interval2 - @intervaloffset2); }
+.ddd6{ .animationDelay(6 * @interval2 - @intervaloffset2); }
+.ddd7{ .animationDelay(7 * @interval2 - @intervaloffset2); }
+.ddd8{ .animationDelay(8 * @interval2 - @intervaloffset2); }
+.ddd9{ .animationDelay(9 * @interval2 - @intervaloffset2); }
+.ddd10{ .animationDelay(10 * @interval2 - @intervaloffset2); }
+
+.ddd11{ .animationDelay(11 * @interval2 - @intervaloffset2); }
+.ddd12{ .animationDelay(12 * @interval2 - @intervaloffset2); }
+.ddd13{ .animationDelay(13 * @interval2 - @intervaloffset2); }
+.ddd14{ .animationDelay(14 * @interval2 - @intervaloffset2); }
+.ddd15{ .animationDelay(15 * @interval2 - @intervaloffset2); }
+.ddd16{ .animationDelay(16 * @interval2 - @intervaloffset2); }
+.ddd17{ .animationDelay(17 * @interval2 - @intervaloffset2); }
+.ddd18{ .animationDelay(18 * @interval2 - @intervaloffset2); }
+.ddd19{ .animationDelay(19 * @interval2 - @intervaloffset2); }
+.ddd20{ .animationDelay(20 * @interval2 - @intervaloffset2); }

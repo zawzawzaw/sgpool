@@ -1,0 +1,573 @@
+.space10{ height: 10px; }
+.space15{ height: 15px; }
+.space20{ height: 20px; }
+.space30{ height: 30px; }
+.space40{ height: 40px; }
+.space50{ height: 50px; }
+.space60{ height: 60px; }
+.space70{ height: 70px; }
+.space80{ height: 80px; }
+.space90{ height: 90px; }
+.space100{ height: 100px; }
+
+hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border: none;
+  border-bottom: 1px solid @border-grey;
+}
+
+
+
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: @off-black;
+
+  &:link,
+  &:visited{
+    color: @off-black;
+  }
+
+  
+
+  &:hover,
+  &:active{
+    color: @off-black;
+  }
+}
+
+
+
+input[type=submit],
+input[type=reset],
+button{
+  cursor: pointer;
+}
+
+.manic-image-container{
+  height: 200px;
+
+  img{
+    .opacity(0);
+  }
+
+  &.image-loaded-version{
+
+    img{
+      // -webkit-animation: plainFadeIn 0.2s both cubic-bezier(0.7,0,0.3,1);
+      // animation: plainFadeIn 0.2s both cubic-bezier(0.7,0,0.3,1);
+      // .dd1;
+      .opacity(1);
+    }
+  }
+}
+
+
+
+
+
+
+
+.scroll-target{
+  position: relative;
+  top: -1 * @header-desktop-height;
+}
+
+// TABLET PORTRAIT
+@media only screen and (max-width: 991px) {
+  .scroll-target{
+    top: -1 * @header-mobile-height;
+  }  
+}
+
+
+
+
+
+#page-wrapper{
+  position: relative;
+}
+#page-wrapper-content{
+  position: relative;
+}
+
+//   __     _____ ____  _____ ___
+//   \ \   / /_ _|  _ \| ____/ _ \
+//    \ \ / / | || | | |  _|| | | |
+//     \ V /  | || |_| | |__| |_| |
+//      \_/  |___|____/|_____\___/
+//
+
+.manic-video-container{
+  height: 200px;
+
+  .video-js{
+    width: 100%;
+    height: 100%;
+    background: #333333;
+
+    .vjs-poster{
+      background-size: cover;
+    }
+  }
+
+  .vjs-fullscreen{
+    video{
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}
+
+.video-js .vjs-modal-dialog{
+  display: none;
+}
+.video-js .vjs-tech{
+  background: @black;
+}
+
+.video-js .vjs-control-bar {
+  background: @grey;
+  background: fade(@grey, 70%);
+}
+
+.video-js .vjs-slider{
+  background: @off-black;
+  background: fade(@off-black, 50%);
+}
+
+
+.vjs-paused .vjs-big-play-button {
+  display: block;
+}
+.custom-play{
+  .vjs-paused .vjs-big-play-button {
+    display: none !important;
+  }
+}
+
+
+.is-actual-mobile{
+
+  .manic-video-container{
+    cursor: pointer;  // https://stackoverflow.com/questions/19431822/jquerys-on-dont-work-on-ios
+  }
+  .vjs-paused .vjs-big-play-button {
+    // display: block;
+    // display: ;
+    // pointer-events: none;
+  }
+}
+
+.video-js .vjs-big-play-button{
+
+  &:before{
+    content: '';
+  }
+
+  .icon-play;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+
+  .transition-in(0.15s);
+
+
+  &:hover,
+  &:focus{
+
+    .scale(1.15);
+    .transition-in(0.2s, cubic-bezier(0.7,0,0.3,1), 0.25s);
+  }
+
+}
+
+.no-display {
+  display: none;
+}
+
+// https://stackoverflow.com/questions/8911247/hide-iphone-html5-video-play-button
+
+video::-webkit-media-controls {
+  display:none !important;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+//    _____ __    ____________ __
+//   / ___// /   /  _/ ____/ //_/
+//   \__ \/ /    / // /   / ,<
+//  ___/ / /____/ // /___/ /| |
+// /____/_____/___/\____/_/ |_|
+
+
+.sgpool-slick-slider {
+
+  .slick-prev,
+  .slick-next{
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    .transition-in(0.3s);
+
+
+    &:before{
+      content: "";
+      border-top: 1px solid @grey;
+      display: block;      
+      right: 0;
+      top: 20px;
+      position: absolute;
+      width: 70%;
+      display: block;
+      .opacity(1);
+    }
+    &:after{
+      top: 0;
+      
+      content: "";
+      border-top: 1px solid @grey;
+      display: block;      
+      right: 0px;
+      position: absolute;
+      width: 70%;
+      display: block;
+      .opacity(1);
+
+      .transition-in(0.3s);
+    }
+
+    &:focus,
+    &:hover{
+      .opacity(0.7);
+      &:after{
+        
+      }
+    }
+
+    &.slick-disabled{
+      pointer-events: none;
+      .opacity-important(0.5);
+
+      &:after{
+        
+      }
+    }
+
+    @media all and (max-width: 991px) {
+      // width: 25px;
+      // height: 25px;
+      // &:after {
+      //   font-size: 12px;
+      //   line-height: 23px;
+      // }
+    }
+  }
+  .slick-prev{
+    left: -3%!important;
+    right: auto;
+
+    &:before {
+      .rotation(45deg);
+      left: 0px;
+      right: auto;
+    }
+
+    &:after{
+      .rotation(-45deg);
+      left: 0px;
+      right: auto;
+    }
+  }
+  .slick-next{
+    left: auto;
+    right: -3%!important;
+
+    &:before {
+      .rotation(-45deg);
+      right: 0px;
+    }
+
+    &:after{
+      .rotation(45deg);
+      right: 0px;
+    }
+  }
+
+  .slick-dots {
+    bottom: 20px;
+    li {
+      width: 10px;
+      height: 10px;
+      button {
+        width: 10px;
+        height: 10px;
+        &:before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          background-color: @off-white;
+          border-radius: 100%;
+          opacity: 1;
+        }      
+      }
+      &.slick-active {
+        button {
+          &:before {
+            background-color: @gold;
+            opacity: 1;
+          }
+        }
+      }
+    } 
+    @media all and (max-width: 991px) {
+      position: static;
+      padding: 0 10px;
+      text-align: right;
+      li {
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+        button {
+          width: 8px;
+          height: 8px;
+          &:before {
+            width: 8px;
+            height: 8px;
+            // background-color: @light-grey-2;
+          }          
+        }
+      }
+    }
+  }
+
+  &.vertical-version {
+    .slick-prev {
+      left: 50%!important;
+      right: auto!important;
+      top: -10px!important;
+      bottom: auto!important;
+      transform: rotate(90deg) translateY(50%);      
+      &:before {
+        top: auto!important;
+        bottom: 10px!important;
+      }
+      &:after {
+        top: 10px!important;
+        bottom: auto!important; 
+      }
+    }
+    .slick-next {
+      left: 50%!important;
+      right: auto!important;
+      bottom: -50px!important;
+      top: auto!important;
+      transform: rotate(90deg) translateY(50%);
+      &:before {
+        top: auto!important;
+        bottom: 10px!important;
+      }
+      &:after {
+        top: 10px!important;
+        bottom: auto!important; 
+      }
+    }
+  }
+}
+
+
+
+.seperator-line {
+  content: "";
+  border-left: 1px solid @border-grey;
+  width: 1px;
+  height: 100%;
+  min-height: 400px;
+  position: absolute;
+  left: -50px;
+}
+
+.inline-block-center {
+  text-align: center;
+  div {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+.v-align-col {
+  @media all and (min-width: 992px) {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }  
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+
+  @media all and (max-width: 991px) {
+    display: block;
+  }
+} 
+
+.flex-center-vertial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-center-both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@section-padding: 70px;
+@section-padding-mobile: 30px;
+
+@section-content-padding-mobile: 20px;
+
+//     __  _______  ____  ______    ______
+//    /  |/  / __ \/ __ )/  _/ /   / ____/
+//   / /|_/ / / / / __  |/ // /   / __/
+//  / /  / / /_/ / /_/ // // /___/ /___
+// /_/  /_/\____/_____/___/_____/_____/
+
+@media all and (max-width: 768px) {  
+  .manic-image-container {
+    &.full-width-version-mobile {
+      margin-left: -20px;
+      margin-right: -20px;
+    }    
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .container-fluid {
+    &.reduce-padding {    
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &.no-padding {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  .no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .no-left-padding {
+    padding-left: 0px;
+  }
+  .no-right-padding {
+    padding-right: 0px;
+  }
+
+  .no-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .container-fluid {
+    &.reduce-padding-mobile {    
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &.no-padding-mobile {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  .no-padding-mobile {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .no-left-padding-mobile {
+    padding-left: 0px;
+  }
+  .no-right-padding-mobile {
+    padding-right: 0px;
+  }
+
+  .no-margin-mobile {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.slick-slide {
+  outline: none!important;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.slick-dots-mobile {
+  .slick-prev, .slick-next {
+    &:before, &:after {
+      border-color: @grey;  
+    }    
+  }
+  .slick-prev {
+    top: 60%;
+    left: 0px!important;
+  }
+  .slick-next {
+    top: 60%;
+    right: 0px!important;
+  }
+
+  .slick-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    li {
+      margin: 0 10px;
+      &.slick-active {
+        button {
+          &:before {
+            background: @grey;
+          }
+        }
+      }
+      button {
+        &:before {
+          // background-color: @grey;
+          border: 2px solid @grey;
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  @media all and (max-width: 991px) {
+    display: block;
+  }
+}

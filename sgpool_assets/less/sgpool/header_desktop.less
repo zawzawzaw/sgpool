@@ -1,0 +1,244 @@
+// body.page-milestones {
+//   #header-desktop {
+//     .color-version;
+//     #header-desktop-content-container {
+//       border-bottom: 1px solid @border-grey-3;  
+//     }    
+//   }
+// }
+
+#header-desktop{
+  position: absolute;
+  z-index: 200000;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .white-bg{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: @header-desktop-height;
+    .box-shadow (0, 30px, 250px, @black);
+
+    .transition-in(0.7s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.0s);
+  }
+
+  &.permanent-bg-version {
+    position: fixed;
+    .color-version;
+  }
+
+  &.bg-version {
+    position: fixed;
+    .color-version;
+  }
+}
+
+.color-version {
+
+  .white-bg {
+    box-shadow: none;
+  }
+  
+  #header-desktop-content-container {
+    background: @white!important;  
+    border-bottom: 1px solid @border-grey-3!important;  
+  }
+
+  #header-desktop-logo {
+    // .logo-kafnu-header-color;     
+    .logo-sgpool-header-color;
+  }
+
+  #header-desktop-menu{    
+    nav {
+      ul {
+        li {
+          a {
+            color: @grey!important;
+            &:hover {
+              // color: @gold!important;
+              color: @blue-5!important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.header-desktop-spacer{
+  background: @white;
+  height: @header-desktop-height;
+  .transition-in(0.7s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.0s);
+
+  @media all and (max-width: 1024px) {
+    height: @header-tablet-height;
+  }
+
+}
+
+.header-mobile-spacer{
+  background: @white;
+  height: @header-mobile-height;
+  .transition-in(0.7s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.0s);
+}
+
+body.actual-mobile-version{
+  #header-desktop{
+    display: none !important;
+  }
+}
+
+
+
+#header-desktop-content-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: @header-desktop-height;  
+
+  .transition-in(0.7s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.0s);  
+
+  // @media only screen and (min-width: 1440px) {
+  //   max-width: 1480px;
+  //   left: 50%;
+  //   margin-left: -740px;
+  // }
+}
+body.home-expand-header-version{
+  #header-desktop-content-container{
+    top: 81px;
+    .transition-in(0.5s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.2s);
+  }
+}
+
+
+
+
+
+
+
+
+//    _____ ___  _   _ _____
+//   |  ___/ _ \| \ | |_   _|
+//   | |_ | | | |  \| | | |
+//   |  _|| |_| | |\  | | |
+//   |_|   \___/|_| \_| |_|
+//
+
+.header-desktop-font{
+  // .calibri-regular;
+  // .fira-sans-medium;
+  // .mercury-text-g2-semibold;
+  .source-sans-pro-semi-bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+.header-desktop-font-02{
+  // .fira-sans-regular;
+  // .calibri-regular;
+  .mercury-text-g2-semibold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    _     ___   ____  ___
+//   | |   / _ \ / ___|/ _ \
+//   | |  | | | | |  _| | | |
+//   | |__| |_| | |_| | |_| |
+//   |_____\___/ \____|\___/
+//
+
+#header-desktop-logo-container{
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+#header-desktop-logo{
+  // position: absolute;
+  // top: 15px;
+  // left: 171px;
+
+  display: block;
+  .logo-sgpool-header;
+
+  // .transition-in(0.4s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.3s);
+
+}
+
+
+
+//    __  __ _____ _   _ _   _
+//   |  \/  | ____| \ | | | | |
+//   | |\/| |  _| |  \| | | | |
+//   | |  | | |___| |\  | |_| |
+//   |_|  |_|_____|_| \_|\___/
+//
+
+#header-desktop-menu{
+  position: absolute;
+  top: 37px;
+  // left: 280px;
+  // right: 60px;
+  left: 500px;
+  right: 500px;
+  height: 26px;
+
+  @media all and (max-width: 1366px) {
+    left: 400px;
+    right: 400px;
+  }
+
+  nav{
+    ul{
+      font-size: inherit!important;
+      .justify-inline-blocks;
+
+      li{
+        .display-inline-block;
+
+        a{
+          display: block;
+          position: relative;
+          // overflow: hidden;
+
+          .header-desktop-font;
+
+          color: @white;
+          // .transition-in-single (color, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.1s);          
+
+          &:hover {
+            color: @blue-5;                  
+          }
+          // &.selected{
+            
+          // }
+
+        }
+      }
+    }
+  }
+}

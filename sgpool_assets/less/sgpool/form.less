@@ -1,0 +1,458 @@
+
+.form-label-font{
+
+  // .clan-pro-medium;
+  .source-sans-pro-regular;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  // color: @dark-grey;
+}
+
+.form-input-font{
+  // .clan-pro-news;
+  .source-sans-pro-regular;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.0em;
+  // color: @grey-2;
+  color: @grey;
+  
+}
+
+.form-error-font{
+  // .clan-pro-news;
+  // font-size: 12px;
+  .source-sans-pro-regular;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  color: @white;
+}
+
+
+
+// MOBILE
+
+.form-label-font-mobile{
+
+  // .clan-pro-medium;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  color: @off-black;
+}
+.form-input-font-mobile{
+  // .clan-pro-news;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  // color: @dark-grey;
+}
+.form-error-font-mobile{
+  
+}
+
+
+@form-field-height: 45px;
+@form-field-height-mobile: 35px;
+@form-field-placeholder-color: @grey-2;
+
+
+@-webkit-keyframes checkbox_animate_in {
+  0% { .scale(0.5); }
+  100% { .scale(1); }
+}
+@keyframes checkbox_animate_in {
+  0% { .scale(0.5); }
+  100% { .scale(1); }
+}
+
+
+//    _____ ___  ____  __  __
+//   |  ___/ _ \|  _ \|  \/  |
+//   | |_ | | | | |_) | |\/| |
+//   |  _|| |_| |  _ <| |  | |
+//   |_|   \___/|_| \_\_|  |_|
+//
+
+.default-form{
+  label{
+    display: block;
+    .form-label-font;
+
+    // padding-top: 6px;
+    margin-bottom: 3px;
+
+    // TABLET PORTRAIT
+    @media only screen and (max-width: 991px) {
+      .form-label-font-mobile;
+      margin-bottom: 3px;
+    }
+
+  } // label
+
+  label.error {
+    .form-error-font;
+    position: absolute;
+  }
+
+  // input fields reset
+  input, textarea, select {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  input[type=email], 
+  input[type=tel],
+  input[type=password], 
+  input[type=text],
+  textarea {
+
+    .form-input-font;
+
+    display: block;
+    width: 100%;
+    height: @form-field-height;
+
+    background: @off-white;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    // padding-left: 16px;
+    // padding-right: 16px;
+    padding-left: 18px;
+    padding-right: 18px;
+
+    outline: none;
+    border: none;
+    .round(0px);
+
+    &::-webkit-input-placeholder{
+      .opacity(1);
+      color: @form-field-placeholder-color;
+    }
+    &:-moz-placeholder{
+      .opacity(1);
+      color: @form-field-placeholder-color;
+    }
+    &::-moz-placeholder{
+      .opacity(1);
+      color: @form-field-placeholder-color;
+    }
+    &:-ms-input-placeholder{
+      .opacity(1);
+      color: @form-field-placeholder-color;
+    }
+
+    &.has-placeholder{
+      .opacity(1);
+      color: @form-field-placeholder-color;
+    }
+
+
+    // TABLET LANDSCAPE
+    @media only screen and (max-width: 1024px) and (min-width: 992px) {
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+
+    // TABLET PORTRAIT
+    @media only screen and (max-width: 991px) {
+      .form-input-font-mobile;
+      padding-left: 11px;
+      padding-right: 11px;
+
+      height: @form-field-height-mobile;
+    }
+
+
+  }
+
+
+  input[type=text] + input[type=text]{
+    margin-top: 22px;
+  }
+
+  .input-container{
+    margin-bottom: 20px;
+  }
+
+  textarea{
+    height: 175px;
+    resize: none;
+
+    // TABLET PORTRAIT
+    @media only screen and (max-width: 991px) {
+      height: 135px;
+    }
+  }
+
+  // remove fill color from google autofill 
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px @off-white inset !important;
+  }
+
+
+  .dropdown {
+    display: block;
+    position: relative;
+
+    select{
+      .form-input-font;
+
+      display: block;
+      width: 100%;
+      height: @form-field-height;
+
+      background: @off-white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      // padding-right: 16px + 20px;    // cuts off some text
+      /// padding-left: 16px;
+      /// padding-right: 21px;
+
+      padding-left: 18px;
+      padding-right: 22px;
+
+      outline: none;
+      border: none;
+      .round(0px);
+
+    }
+
+    &:after{
+      .fa;
+      content: "\f107";
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: @off-black;
+
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 20px;
+      height: 20px;
+
+      pointer-events: none;
+    }
+    // TABLET LANDSCAPE
+    @media only screen and (max-width: 1024px) and (min-width: 992px) {
+      select{
+        padding-left: 13px;
+        padding-right: 13px + 5px;
+      }
+    }
+
+    // TABLET PORTRAIT
+    @media only screen and (max-width: 991px) {
+      select{
+        .form-input-font-mobile;
+        padding-left: 11px;
+        // padding-right: 11px + 20px;
+        padding-right: 11px + 5px;
+
+        height: @form-field-height-mobile;
+      }
+    }
+
+  } // .dropdown
+
+
+
+  .manic-dropdown{
+    background: @off-white;
+    border: none;
+
+    height: @form-field-height;
+
+    padding-left: 18px;
+    padding-right: 22px;
+
+    // padding-top: 6px;
+    padding-top: 9px;
+    padding-bottom: 4px;
+
+    // text
+    .goog-menu-button-caption,
+    .goog-menuitem .goog-menuitem-content{
+      .form-input-font;
+    }
+
+    // placeholder
+    &.has-placeholder .goog-menu-button-caption{
+      color: @form-field-placeholder-color;
+    }
+
+    // text highlight
+    .goog-menuitem.goog-menuitem-highlight,
+    .goog-menuitem:hover{
+      background: #dcdcdc;
+      color: #6d6e71;
+    }
+
+    // arrow
+    .goog-menu-button-dropdown{
+      top: 10px;
+      right: 12px;
+      &:after{
+        font-size: 20px;
+      }
+    }
+
+    // list item container
+    .goog-menu {
+      background: @white;
+      border: 1px solid @border-grey-2;
+
+      position: absolute;
+
+      //width: 100%;
+      top: 40px !important;
+      left: 0px !important;
+      right: 0px !important;
+
+    }
+
+    // list item
+    .goog-menuitem {
+      padding-left: 18px;
+      padding-right: 22px;
+
+      padding-top: 9px;
+      padding-bottom: 6px;
+    }
+
+    // TABLET PORTRAIT
+    @media only screen and (max-width: 991px) {
+      height: @form-field-height-mobile;
+
+      padding-left: 11px;
+      padding-right: 25px;
+
+      select{
+        height: @form-field-height-mobile;
+      }
+      // mobile arrow
+      &:before{
+        top: 7px;
+        right: 9px;
+        font-size: 20px;
+      }
+
+    }
+
+
+  } // .manic-dropdown
+
+
+
+} // .default-form
+
+
+
+//    _____ ___  ____  __  __  __     ___    _     ___ ____    _  _____ ___ ___  _   _
+//   |  ___/ _ \|  _ \|  \/  | \ \   / / \  | |   |_ _|  _ \  / \|_   _|_ _/ _ \| \ | |
+//   | |_ | | | | |_) | |\/| |  \ \ / / _ \ | |    | || | | |/ _ \ | |  | | | | |  \| |
+//   |  _|| |_| |  _ <| |  | |   \ V / ___ \| |___ | || |_| / ___ \| |  | | |_| | |\  |
+//   |_|   \___/|_| \_\_|  |_|    \_/_/   \_\_____|___|____/_/   \_\_| |___\___/|_| \_|
+//
+
+
+.default-form{
+
+  .form-group.has-error{
+
+    &:after{
+      .form-error-font;
+      text-align: right;
+
+      content: attr(data-error);
+      display: block;
+
+      position: absolute;
+      height: 16px;
+      width: 100%;
+      bottom: -23px;
+      right: 0px;
+    }
+
+  }
+}
+
+
+//    _____ ___  ____  __  __   _____ _     _____ __  __ _____ _   _ _____ ____
+//   |  ___/ _ \|  _ \|  \/  | | ____| |   | ____|  \/  | ____| \ | |_   _/ ___|
+//   | |_ | | | | |_) | |\/| | |  _| | |   |  _| | |\/| |  _| |  \| | | | \___ \
+//   |  _|| |_| |  _ <| |  | | | |___| |___| |___| |  | | |___| |\  | | |  ___) |
+//   |_|   \___/|_| \_\_|  |_| |_____|_____|_____|_|  |_|_____|_| \_| |_| |____/
+//
+
+.default-form{
+
+  .form-group{
+    position: relative;     // used by validation
+    margin-bottom: 32px;
+
+  }
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    .form-group{
+      margin-bottom: 18px;
+    }
+  }
+
+} // .default-form
+
+
+//    _   _ ____  _     ___    _    ____
+//   | | | |  _ \| |   / _ \  / \  |  _ \
+//   | | | | |_) | |  | | | |/ _ \ | | | |
+//   | |_| |  __/| |__| |_| / ___ \| |_| |
+//    \___/|_|   |_____\___/_/   \_\____/
+//
+
+.manic-file-upload{
+  position: relative;
+
+  input[type=file]{
+    .opacity(0);
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .preloader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+
+    // background: @dark-grey;
+
+    .opacity(0);
+
+    &.visible-version{
+
+      .opacity(1);
+    }
+  }
+
+}

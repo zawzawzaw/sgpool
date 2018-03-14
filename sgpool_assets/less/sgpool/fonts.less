@@ -1,0 +1,636 @@
+@font-face {
+  font-family: 'MercuryTextG2-Italic';
+  src: url('../fonts/MercuryTextG2-Italic.eot?#iefix') format('embedded-opentype'),  url('../fonts/MercuryTextG2-Italic.woff') format('woff'), url('../fonts/MercuryTextG2-Italic.ttf')  format('truetype'), url('../fonts/MercuryTextG2-Italic.svg#MercuryTextG2-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MercuryTextG2-Semibold';
+  src: url('../fonts/MercuryTextG2-Semibold.eot?#iefix') format('embedded-opentype'),  url('../fonts/MercuryTextG2-Semibold.woff') format('woff'), url('../fonts/MercuryTextG2-Semibold.ttf')  format('truetype'), url('../fonts/MercuryTextG2-Semibold.svg#MercuryTextG2-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-Bold.ttf')  format('truetype'), url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf')  format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MercuryTextG2-Roman';
+  src: url('../fonts/MercuryTextG2-Roman.eot?#iefix') format('embedded-opentype'),  url('../fonts/MercuryTextG2-Roman.woff') format('woff'), url('../fonts/MercuryTextG2-Roman.ttf')  format('truetype'), url('../fonts/MercuryTextG2-Roman.svg#MercuryTextG2-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//    ____   ___  _   _ ____   ____ _____   ____    _    _   _ ____    ____  ____   ___
+//   / ___| / _ \| | | |  _ \ / ___| ____| / ___|  / \  | \ | / ___|  |  _ \|  _ \ / _ \
+//   \___ \| | | | | | | |_) | |   |  _|   \___ \ / _ \ |  \| \___ \  | |_) | |_) | | | |
+//    ___) | |_| | |_| |  _ <| |___| |___   ___) / ___ \| |\  |___) | |  __/|  _ <| |_| |
+//   |____/ \___/ \___/|_| \_\\____|_____| |____/_/   \_\_| \_|____/  |_|   |_| \_\\___/
+//
+
+// .fira-sans-regular{
+//   font-family: 'Fira Sans', 'Arial', sans-serif;
+//   font-style: normal;
+//   font-weight: 400;
+// }
+
+// .fira-sans-light{
+//   font-family: 'Fira Sans', 'Arial', sans-serif;
+//   font-style: normal;
+//   font-weight: 300;
+// }
+
+// .fira-sans-medium{
+//   font-family: 'Fira Sans', 'Arial', sans-serif;
+//   font-style: normal;
+//   font-weight: 500;
+// }
+
+// .fira-sans-bold{
+//   font-family: 'Fira Sans', 'Arial', sans-serif;
+//   font-style: normal;
+//   font-weight: 700;
+// }
+
+////
+
+.mercury-text-g2-semibold {
+  // font-family: 'MercuryTextG2-Semibold', 'Arial', sans-serif;
+  // font-style: normal;
+  // font-weight: normal;
+
+  // font-family: "Mercury Text G1 A", "Mercury Text G1 B";
+  font-family: "Mercury SSm A", "Mercury SSm B";
+  font-style: normal;
+  font-weight: 500;
+}
+
+.mercury-text-g2-regular {
+  // font-family: 'MercuryTextG2-Roman', 'Arial', sans-serif;
+  // font-style: normal;
+  // font-weight: normal;
+
+  // font-family: "Mercury Text G1 A", "Mercury Text G1 B";
+  font-family: "Mercury SSm A", "Mercury SSm B";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.mercury-text-g2-italic {
+  // font-family: 'MercuryTextG2-Italic', 'Arial', sans-serif;
+  // font-style: normal;
+  // font-weight: normal;
+
+  // font-family: "Mercury Text G1 A", "Mercury Text G1 B";
+  font-family: "Mercury SSm A", "Mercury SSm B";
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+.helvetica-nue-bold {
+  font-family: 'HelveticaNeue-Bold', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.helvetica-nue-regular {
+  font-family: 'HelveticaNeue', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.source-sans-pro-regular {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.source-sans-pro-medium {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.source-sans-pro-semi-bold {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+//    ____ _______   ___     _____
+//   / ___|_   _\ \ / / |   | ____|
+//   \___ \ | |  \ V /| |   |  _|
+//    ___) || |   | | | |___| |___
+//   |____/ |_|   |_| |_____|_____|
+//
+
+.body-font(@multiplier: 1){
+  .source-sans-pro-regular;
+  font-size: 17px * @multiplier;
+  line-height: 23px * @multiplier;
+}
+
+.body-font-bold(@multiplier: 1){
+  .source-sans-pro-semi-bold;
+  // font-size: 25px * @multiplier;
+  // line-height: 35px * @multiplier;
+  font-size: 17px * @multiplier;
+  line-height: 23px * @multiplier;
+}
+
+.body-font-mobile(@multiplier: 1){ // done
+  .source-sans-pro-regular;
+  font-size: 16px * @multiplier;
+  line-height: 24px * @multiplier;
+}
+
+.body-font-bold-mobile(@multiplier: 1){
+  .source-sans-pro-regular;
+  font-size: 16px * @multiplier;
+  line-height: 24px * @multiplier;
+}
+
+
+
+
+
+
+.h1-style(@multiplier: 1){
+  .mercury-text-g2-regular;
+  font-size: 45px * @multiplier;
+  line-height: 38px * @multiplier;
+}
+
+.h2-style(@multiplier: 1){
+  .mercury-text-g2-regular;
+  font-size: 30px * @multiplier;
+  line-height: 35px * @multiplier;
+}
+
+.h3-style(@multiplier: 1){
+  .mercury-text-g2-regular;
+  font-size: 25px * @multiplier;
+  line-height: 31px * @multiplier;  
+}
+
+.h4-style(@multiplier: 1){
+  .mercury-text-g2-italic;
+  font-size: 17px * @multiplier;
+  line-height: 17px * @multiplier; 
+}
+
+.h5-style(@multiplier: 1){
+  .mercury-text-g2-regular;
+  font-size: 16px * @multiplier;
+  line-height: 19px * @multiplier;
+}
+
+.h6-style(@multiplier: 1){
+  // .helvetica-nue-bold;
+  .source-sans-pro-semi-bold;
+  // .source-sans-pro-medium;
+  font-size: 14px * @multiplier;
+  line-height: 20px * @multiplier;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;  
+}
+
+//     __  _______  ____  ______    ______
+//    /  |/  / __ \/ __ )/  _/ /   / ____/
+//   / /|_/ / / / / __  |/ // /   / __/
+//  / /  / / /_/ / /_/ // // /___/ /___
+// /_/  /_/\____/_____/___/_____/_____/
+
+
+.h1-style-mobile(@multiplier: 1){// done
+  .mercury-text-g2-regular;
+  font-size: 30px * @multiplier;
+  line-height: 35px * @multiplier;
+}
+
+.h2-style-mobile(@multiplier: 1){ // done
+  .mercury-text-g2-regular;
+  font-size: 25px * @multiplier;
+  line-height: 30px * @multiplier;
+}
+
+.h3-style-mobile(@multiplier: 1){ // done
+  .mercury-text-g2-regular;
+  font-size: 25px * @multiplier;
+  line-height: 31px * @multiplier;  
+}
+
+.h4-style-mobile(@multiplier: 1){// done
+  .mercury-text-g2-italic;
+  font-size: 17px * @multiplier;
+  line-height: 17px * @multiplier; 
+}
+
+.h5-style-mobile(@multiplier: 1){
+  .mercury-text-g2-regular;
+  font-size: 16px * @multiplier;
+  line-height: 19px * @multiplier;
+}
+
+.h6-style-mobile(@multiplier: 1){
+  .source-sans-pro-semi-bold;
+  // .source-sans-pro-medium;
+  font-size: 15px * @multiplier;
+  line-height: 24px * @multiplier;
+  text-transform: uppercase;  
+}
+
+
+//    _____  _    ____ ____
+//   |_   _|/ \  / ___/ ___|
+//     | | / _ \| |  _\___ \
+//     | |/ ___ \ |_| |___) |
+//     |_/_/   \_\____|____/
+//
+
+body{
+  .body-font;
+  color: @grey;
+  background: @white;
+}
+
+
+
+h1{
+  .h1-style;
+  a{
+    .h1-style;
+    display: block;
+  }
+}
+h2{
+  .h2-style;
+  a{
+    .h2-style;
+    display: block;
+  }
+}
+h3{
+  .h3-style;
+  a{
+    .h3-style;
+    display: block;
+  }
+}
+h4{
+  .h4-style;
+  a{
+    .h4-style;
+    display: block;
+  }
+}
+h5{
+  .h5-style;
+  a{
+    .h5-style;
+    display: block;
+  }
+}
+h6{
+  .h6-style;
+  a{
+    .h6-style;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  h1{
+    .h1-style-mobile;
+    a{
+      .h1-style-mobile;
+      display: block;
+    }
+  }
+  h2{
+    .h2-style-mobile;
+    a{
+      .h2-style-mobile;
+      display: block;
+    }
+  }
+  h3{
+    .h3-style-mobile;
+    a{
+      .h3-style-mobile;
+      display: block;
+    }
+  }
+  h4{
+    .h4-style-mobile;
+    a{
+      .h4-style-mobile;
+      display: block;
+    }
+  }
+  h5{
+    .h5-style-mobile;
+    a{
+      .h5-style-mobile;
+      display: block;
+    }
+  }
+  h6{
+    .h6-style-mobile;
+    a{
+      .h6-style-mobile;
+      display: block;
+    }
+  }
+}
+
+
+// TABLET PORTRAIT
+@media only screen and (max-width: 991px) {
+  body{
+    .body-font-mobile;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+p{
+  strong{
+    .body-font-bold;
+  }
+  b{
+    .body-font-bold;
+  }
+}
+
+/*
+// small laptop
+@media only screen and (max-width: 1280px) {
+  p{
+    strong{
+      .body-font-bold(0.9);
+    }
+    b{
+      .body-font-bold(0.9);
+    }
+  }
+} // // small laptop
+*/
+
+// TABLET PORTRAIT
+@media only screen and (max-width: 991px) {
+  p{
+    strong{
+      .body-font-bold-mobile;
+    }
+    b{
+      .body-font-bold-mobile;
+    }
+  }
+}
+
+
+
+
+//    ____  _____ _____ _   _   _ _   _____    ____ ___  ______   __
+//   |  _ \| ____|  ___/ \ | | | | | |_   _|  / ___/ _ \|  _ \ \ / /
+//   | | | |  _| | |_ / _ \| | | | |   | |   | |  | | | | |_) \ V /
+//   | |_| | |___|  _/ ___ \ |_| | |___| |   | |__| |_| |  __/ | |
+//   |____/|_____|_|/_/   \_\___/|_____|_|    \____\___/|_|    |_|
+//
+
+.default-copy{
+  p{
+    .body-font;
+
+    strong{
+      .body-font-bold;
+    }
+    b{
+      .body-font-bold;
+    }
+    sup{
+      .body-font(0.8);
+      position: relative;
+      top: -3px;
+    }
+  }
+
+  li{
+    .body-font;
+    strong{
+      .body-font-bold;
+    }
+    b{
+      .body-font-bold;
+    }
+    a{
+      .body-font-bold;
+      color: @off-black;
+      .transition-in-single (color, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.08s + 0.05s);
+
+      &:hover{
+        color: @grey;
+        .transition-in-single (color, 0.2s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.06s);
+      }
+    }
+  }
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    p{
+      .body-font-mobile;
+
+      strong{
+        .body-font-bold-mobile;
+      }
+      b{
+        .body-font-bold-mobile;
+      }
+      sup{
+        .body-font-mobile(0.8);
+        top: -4px;
+      }
+    }
+
+    li{
+      .body-font-mobile;
+      strong{
+        .body-font-bold-mobile;
+      }
+      b{
+        .body-font-bold-mobile;
+      }
+      a{
+        .body-font-bold-mobile;
+      }
+    }
+  }
+
+
+
+  p + p{
+    padding-top: 26px;
+  }
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    p + p{
+      padding-top: 20px;
+    }
+  }
+
+
+  h1 + p{
+
+  }
+
+  h2 + p{
+    
+  }
+
+
+  ul{
+    li{
+      position: relative;
+      padding-left: 14px;
+
+      margin-bottom: 10px;
+
+      // TABLET PORTRAIT
+      @media only screen and (max-width: 991px) {
+        padding-left: 10px;
+      }
+
+
+      &:before{
+        .fa;
+        font-size: 5px;
+        line-height: 25px;
+        content: "\f111";
+
+        .display-inline-block;
+        position: absolute;
+        top: 0px;
+        // left: 3px + 4px;
+        /// left: 11px;
+        left: 0px;
+
+        /*
+        @media only screen and (max-width: 1280px) {
+          line-height: 25px * 0.9;
+        }
+        */
+        
+        // TABLET PORTRAIT
+        @media only screen and (max-width: 991px) {
+          font-size: 4px;
+          line-height: 20px;
+        }
+      }
+
+      /*
+      &:last-child{
+        margin-bottom: 0px;
+      }
+      */
+    }
+  }
+
+
+
+  ol{
+    counter-reset: ol-counter;
+
+    // padding-top: 24px;
+    // padding-bottom: 24px;
+
+    li{
+      position: relative;
+      padding-left: 16px;
+
+      margin-bottom: 24px;
+
+      &:before{
+        .body-font-bold;
+
+        /*
+        @media only screen and (max-width: 1280px) {
+          .body-font-bold(0.9);
+        }
+        */
+        
+        // TABLET PORTRAIT
+        @media only screen and (max-width: 991px) {
+          .body-font-bold-mobile;
+        }
+
+        color: @off-black;
+        content: counter(ol-counter);
+        counter-increment: ol-counter;
+        display: block;
+
+        .display-inline-block;
+        position: absolute;
+        top: 0px;
+        // left: 3px + 4px;
+        /// left: 11px;
+        left: 0px;
+      }
+    }
+
+    &.last-version{
+      padding-bottom: 0px;
+      li{
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  
+
+}
+
+
+
+
+
+
+// TABLET PORTRAIT
+@media only screen and (max-width: 991px) {
+  .default-copy{
+
+  }
+}
