@@ -41,7 +41,12 @@ ob_start();
                     <div class="col-sm-12">                    
 
                         <div id="page-events-details-event-box" class="page-default-event-box events-version" data-geo-lat="1.3248134" data-geo-lng="103.8577874">
-                          <div class="tag-container"><h6>Corporate</h6></div>                    
+                          <!-- <div class="tag-container"><h6>Corporate</h6></div>                     -->
+                          <div class="manic-image-container">
+                            <img src="" class="img-responsive" 
+                              data-image-tablet="images_cms/events/event-01-tabletv2.jpg" 
+                              data-image-mobile="images_cms/events/event-01-mobilev2.jpg" alt="">
+                          </div>
                           <div class="text-container">
                             <h3>Corporate Tour: Singapore Pools’ 50-Year Journey</h3>
                             <p>Hear the nostalgic stories of how we started our journey in 1968 in providing a legal and trusted betting avenue to counter illegal gambling in Singapore. Witness an actual live lottery draw, and learn about our operations and commitment towards responsible gaming.</p>
@@ -54,12 +59,7 @@ ob_start();
                               <li><p>The number of attendees</p></li>
                             </ul>
                             <span>*Please note that corporate tour participants must be of legal age as Singapore Pools adheres strictly to a “no betting for under-18s” rule.</span>                            
-                          </div>
-                          <div class="manic-image-container">
-                            <img src="" class="img-responsive" 
-                              data-image-tablet="images_cms/events/event-01-tablet.jpg" 
-                              data-image-mobile="images_cms/events/event-01-mobile.jpg" alt="">
-                          </div>
+                          </div>                          
 
                         </div> <!-- end page-default-event-box -->                                   
 

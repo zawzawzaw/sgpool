@@ -41,19 +41,23 @@ ob_start();
                     <div class="col-sm-12">                    
 
                         <div id="page-events-details-event-box" class="page-default-event-box events-version" data-geo-lat="1.3529944" data-geo-lng="103.94039739999994">
-                          <div class="tag-container"><h6>Public</h6></div>                    
-                          <div class="text-container">
-                            <h3>Football With A Heart 2018 Tournament</h3>
-                            <p>Swing by to watch our meaningful Football With A Heart (FWAH) charity fundraising tournament. </p>
-                            <p>Catch the Celebrity Teams competition consisting of Fox Sports All Stars, Mediacorp Celebrities, Team Parliamentarians, and Team Public Service in action. Check out our corporate donars and lend your support for your favourite organisation such as ... in our friendly five-a-side football tournament.</p>
-                            <p>The event is fully funded by organising partners and supported by venue partners. All proceeds from the event go to designated charities. For more information, visit: <a href="http://www.singaporepools.com.sg/ms/fwah2018/fwah_index.html" target="_blank">http://www.singaporepools.com.sg/ms/fwah2018/fwah_index.html</a></p>
-                            <p>Admission is free.</p>
-                          </div>
+                          <!-- <div class="tag-container"><h6>Public</h6></div>                     -->
                           <div class="manic-image-container">
                             <img src="" class="img-responsive" 
-                              data-image-tablet="images_cms/events/event-05-tablet.jpg" 
-                              data-image-mobile="images_cms/events/event-05-mobile.jpg" alt="">
+                              data-image-tablet="images_cms/events/event-05-tabletv2.jpg" 
+                              data-image-mobile="images_cms/events/event-05-mobilev2.jpg" alt="">
                           </div>
+                          <div class="text-container">
+                            <h3>Football With A Heart 2018</h3>
+                            <p>Swing by to be present at Singapore’s largest football charity fundraiser, Football With A Heart (FWAH)!</p>
+                            <p>Over the past few edition, we have raised S$XXXXX in aids of X beneficiaries with more than XXX organisations on-board for a good cause.</p>
+                            <p>In its fifth edition, FWAH will welcome about 900 footballers from various corporations for a friendly five-a-side football tournament. Catch our Parliamentarian Team and Team Public Service in action as they pit against each other at the celebrity matches. Be there to cheer for them!</p>
+                            <p>The event is fully funded by organising partners and supported by venue partner. All proceeds from the event go to designated charities.</p>
+                            <p><b>Venue</b><br>
+                            Our Tampines Hub (Town Square)</p>
+                            <p><b>Admission</b><br>
+                            Free</p>
+                          </div>                          
 
                         </div> <!-- end page-default-event-box -->                                   
 

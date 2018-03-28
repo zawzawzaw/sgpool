@@ -34,8 +34,8 @@
   <div id="header-mobile-nav-container">
     <nav>
       <ul>        
-        <li><a href="museum.html">Our Heritage</a></li>
-        <li><a href="milestones.html">Our Moments</a></li>
+        <li><a href="#">Our Moments</a></li>
+        <li><a href="#">Our Heritage</a></li>        
         <li><a href="events.html">Events</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>

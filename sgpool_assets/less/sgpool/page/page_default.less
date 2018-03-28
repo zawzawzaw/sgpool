@@ -33,9 +33,21 @@
       height: 450px;
     }
   }
+  &.shorter-banner {
+    .manic-image-container {
+      height: 300px;
+    } 
+  }
 }
 
 #page-default-banner-image-mobile {
+  &.short-banner {
+    @media all and (max-width: 991px) {
+      .manic-image-container {
+        height: 300px;
+      }
+    }  
+  }
   @media all and (max-width: 991px) {
     .manic-image-container {
       height: 450px;
@@ -69,7 +81,14 @@
         color:@white;
         width: 100%;
       }
-    }   
+    }
+    &.gallery-version {
+      width: 80%;
+      #page-default-banner-copy {
+        color:@white!important;
+        width: 100%;
+      } 
+    }
   }
   
 }

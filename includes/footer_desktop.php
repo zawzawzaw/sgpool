@@ -39,7 +39,7 @@
             <li><a href="museum-lottery-draws.html">Lottery Draws</a></li>
           </ul>
         </div>
-        <div class="col-md-3 col-md-offset-1">
+        <div class="col-md-2 col-md-offset-1">
           <h5>Singapore Pools (Private) Limited</h5>
           <p>210 Middle Road, #01-01, Singapore Pools Building, <br>
           Singapore 188994 <br>

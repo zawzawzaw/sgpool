@@ -41,18 +41,27 @@ ob_start();
                     <div class="col-sm-12">                    
 
                         <div id="page-events-details-event-box" class="page-default-event-box events-version" data-geo-lat="1.2912445" data-geo-lng="103.86392780000006">
-                          <div class="tag-container"><h6>Public</h6></div>                    
-                          <div class="text-container">
-                            <h3>Chingay 2018</h3>
-                            <p>Immerse in the dazzling displays of light, sound, costumes and performances at Asia's largest street performance.</p>
-                            <p>Catch Singapore Pools' float making its way from the main parade site to the heartlands - sharing the celebration and promoting multi-culturalism and community cohesiveness, with all fellow Singaporeans.</p>
-                            <p>Singapore Pools is a Principal Founding Sponsor of the Chingay Parade since 1995. <a href="https://www.chingay.org.sg" target="_blank">https://www.chingay.org.sg</a></p>
-                          </div>
+                          <!-- <div class="tag-container"><h6>Public</h6></div>                     -->
                           <div class="manic-image-container">
                             <img src="" class="img-responsive" 
-                              data-image-tablet="images_cms/events/event-04-tablet.jpg" 
-                              data-image-mobile="images_cms/events/event-04-mobile.jpg" alt="">
+                              data-image-tablet="images_cms/events/event-04-tabletv2.jpg" 
+                              data-image-mobile="images_cms/events/event-04-mobilev2.jpg" alt="">
                           </div>
+                          <div class="text-container">
+                            <h3>Chingay 2018</h3>
+                            <p>Immerse in the dazzling displays of light, sound, costumes and performances at Asia’s largest street performance.</p>
+
+                            <p>Catch Singapore Pools’ float as one of the parade’s finale float. The floats will also be visiting heartlands, to share the celebration and promoting multi-culturalism and community cohesiveness, with all fellow Singaporeans.</p>
+
+                            <p>Singapore Pools is a Principal Founding Sponsor of the Chingay Parade since 1995.</p>
+
+                            <p>Visit <a href="https://www.chingay.org.sg" target="_blank">https://www.chingay.org.sg</a> for more details.</p>
+                            
+                            <p><b>Venue</b><br>
+                            F1 Pit Building</p>
+                            <p><b>Admission</b><br>
+                            Free</p>
+                          </div>                          
 
                         </div> <!-- end page-default-event-box -->                                   
 

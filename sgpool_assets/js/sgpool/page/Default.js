@@ -230,7 +230,7 @@ sgpool.page.Default.prototype.create_event_slider = function(){
       'dots': false,
       'arrows': true,
       'infinite': true,
-      'slidesToShow': 5,
+      'slidesToShow': 3,
       'slidesToScroll': 1,
       'pauseOnHover': true,
       'autoplay': false,
@@ -283,6 +283,8 @@ sgpool.page.Default.prototype.create_event_box_slider = function(){
       ]
     });  
 
+    $("#page-home-event-box-slider").slick('slickGoTo', 2);
+
     $('.page-home-event-box-slider-item').click(function() {      
 
       if(!$(this).hasClass("slick-current")) {
@@ -291,10 +293,9 @@ sgpool.page.Default.prototype.create_event_box_slider = function(){
 
         if(manic.IS_MOBILE == true) {
           // console.log($(this).data('url'));
-          window.location.href = $(this).data('url');
+          window.location.href = $(this).data('mobile-url');
         } else {
-          var slideIndex = $(this).data('slick-index');
-          window.location.href = "events.html#"+slideIndex;
+          window.location.href = $(this).data('desktop-url');
         }
         
       }

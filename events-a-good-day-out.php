@@ -41,18 +41,25 @@ ob_start();
                     <div class="col-sm-12">                    
 
                         <div id="page-events-details-event-box" class="page-default-event-box events-version" data-geo-lat="1.3529944" data-geo-lng="103.94039739999994">
-                          <div class="tag-container"><h6>Public</h6></div>                    
-                          <div class="text-container">
-                            <h3>Exhibition: 50 Years for Community Benefit @ A Good Day Out</h3>
-                            <p>This exhibition will take you down memory lane on our 50 years of contributions towards the community – from countering illegal gambling to making possible many of the good we see today.</p>
-                            <p>You can also catch the heartwarming performances from our beneficiaries, play exciting games, and eat to your heart’s delight with food served by social enterprises.</p>
-                            <p>Admission is free.</p>
-                          </div>
+                          <!-- <div class="tag-container"><h6>Public</h6></div>                     -->
                           <div class="manic-image-container">
                             <img src="" class="img-responsive" 
-                              data-image-tablet="images_cms/events/event-03-tablet.jpg" 
-                              data-image-mobile="images_cms/events/event-03-mobile.jpg" alt="">
+                              data-image-tablet="images_cms/events/event-03-tabletv2.jpg" 
+                              data-image-mobile="images_cms/events/event-03-mobilev2.jpg" alt="">
                           </div>
+                          <div class="text-container">
+                            <h3>A GOOD DAY OUT by Tote Board</h3>
+                            <p>Catch the heartwarming performance from beneficiaries who benefitted from the Tote Board Group’s giving at A Good Day Out at Gardens By The Bay.</p>
+
+                            <p>You can walk down the memory lane on our 50 years of contributions for community benefit – from countering illegal gambling to making possible many of the good we see today – at the Tapestry of Hope exhibition area. </p>
+
+                            <p>Visit <a href="http://www.toteboard.gov.sg/tote-board-30" target="_blank">http://www.toteboard.gov.sg/tote-board-30</a> for more details.</p>
+
+                            <p><b>Venue</b><br>
+                            Gardens by the Bay (The Meadow)</p>
+                            <p><b>Admission</b><br>
+                            Free</p>
+                          </div>                          
 
                         </div> <!-- end page-default-event-box -->                                   
 

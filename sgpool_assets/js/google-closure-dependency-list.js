@@ -42,6 +42,7 @@ goog.addDependency('../../../../../js/sgpool/component/HeaderDesktop.js', ['sgpo
 goog.addDependency('../../../../../js/sgpool/component/HeaderMobile.js', ['sgpool.component.HeaderMobile'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../../js/sgpool/page/Default.js', ['sgpool.page.Default'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.page.Page', 'manic.ui.BoxItem', 'manic.ui.Dropdown', 'sgpool.component.HeaderDesktop', 'sgpool.component.HeaderMobile']);
 goog.addDependency('../../../../../js/sgpool/page/Events.js', ['sgpool.page.Events'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.ui.AnimatedSVG', 'manic.ui.HoverItem', 'sgpool.page.Default']);
+goog.addDependency('../../../../../js/sgpool/page/Gallery.js', ['sgpool.page.Gallery'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.ui.HoverItem', 'sgpool.page.Default']);
 goog.addDependency('../../../../../js/sgpool/page/Home.js', ['sgpool.page.Home'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.ui.AnimatedSVG', 'manic.ui.HoverItem', 'sgpool.page.Default']);
 goog.addDependency('../../../../../js/sgpool/page/Milestones.js', ['sgpool.page.Milestones'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.ui.AnimatedSVG', 'manic.ui.HoverItem', 'sgpool.page.Default']);
 goog.addDependency('../../../../../js/sgpool/page/Milestones_Org.js', ['sgpool.page.Milestones_Org'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.ui.AnimatedSVG', 'manic.ui.HoverItem', 'sgpool.page.Default']);

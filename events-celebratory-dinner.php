@@ -40,17 +40,19 @@ ob_start();
 
                     <div class="col-sm-12">                    
 
-                        <div id="page-events-details-event-box" class="page-default-event-box events-version" data-geo-lat="1.3745733" data-geo-lng="103.716078">
-                          <div class="tag-container"><h6>Corporate</h6></div>                    
-                          <div class="text-container">
-                            <h3>Singapore Pools 50th Anniversary Celebratory Dinner</h3>
-                            <p>May 2018 marks Singapore Pools’ golden jubilee. Coming together with our corporate partners, vendors, beneficiaries, staff, internal stakeholders, and media, this event celebrates our 50 years for community benefit.</p>
-                          </div>
+                        <div id="page-events-details-event-box" class="page-default-event-box events-version" data-geo-lat="1.3001541" data-geo-lng="103.8510485">
+                          <!-- <div class="tag-container"><h6>Corporate</h6></div>                     -->
                           <div class="manic-image-container">
                             <img src="" class="img-responsive" 
-                              data-image-tablet="images_cms/events/event-07-tablet.jpg" 
-                              data-image-mobile="images_cms/events/event-07-mobile.jpg" alt="">
+                              data-image-tablet="images_cms/events/event-07-tabletv2.jpg" 
+                              data-image-mobile="images_cms/events/event-07-mobilev2.jpg" alt="">
                           </div>
+                          <div class="text-container">
+                            <h3>Singapore Pools 50th Anniversary Dinner</h3>
+                            <p>May 2018 marks Singapore Pools’ golden jubilee. An intimate dinner event to commemorate the celebration with our various stakeholders. Coming together to celebrate our 50 years for community benefit.</p>
+
+                            <p><strong>By Invitation Only</strong></p>
+                          </div>                          
 
                         </div> <!-- end page-default-event-box -->                                   
 
@@ -66,7 +68,7 @@ ob_start();
 
                     <div class="col-sm-12 no-padding-mobile">  
                       
-                      <div id="page-events-slider-map" style="display: none;"></div>
+                      <div id="page-events-slider-map"></div>
 
                     </div> <!-- end col-md-4 -->
 

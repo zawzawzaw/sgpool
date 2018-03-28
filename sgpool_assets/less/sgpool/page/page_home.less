@@ -288,8 +288,13 @@
         }
         &.centralized-2 {          
           img {
+            @media all and (max-width: 1366px){              
+              /*left: -29%;            */
+              left: -13%;            
+            }
             @media all and (max-width: 1280px){              
-              left: -29%;            
+              /*left: -29%;            */
+              left: -15%;            
             }
           }            
         }
@@ -314,6 +319,9 @@
         }
         @media all and (max-width: 375px) {
           height: 375px;
+        }
+        @media all and (max-width: 320px) {
+          height: 320px;
         }
       }
       .manic-image-container-02 {
