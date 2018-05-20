@@ -99,6 +99,8 @@ sgpool.page.Default = function(options, element) {
       // console.log(touchEvent)
   });
 
+  var validator = null;
+
   // console.log('sgpool.page.Default: init');
 };
 goog.inherits(sgpool.page.Default, manic.page.Page);
@@ -134,6 +136,14 @@ sgpool.page.Default.prototype.init = function() {
   this.create_header_mobile();
 
   this.expandable_text();
+
+  this.textarea_count();
+
+  this.upload_file();
+
+  this.contest_form_validate();
+
+  this.pop_up();
   // 
   // 
 
@@ -432,6 +442,271 @@ sgpool.page.Default.prototype.expandable_text = function() {
 
 }
 
+sgpool.page.Default.prototype.contest_form_validate = function(){
+
+  var emails = [];
+  var nrics = [];
+
+  function isInArray(value, array) {
+    return array.indexOf(value) > -1;
+  }
+
+  var $form = $("#contest-form");
+
+  if($form.length > 0) {
+    validator = $form.validate({
+      ignore: [], //validate for hidden field
+      rules: {
+        name: "required",
+        nric_passport: {
+          required: true,
+          nricalreadyexist: true
+        },
+        mobile: {
+          required: true,
+          mobilecheck: true
+        },                   
+        email: {
+          required: true,
+          email: true
+        },      
+        uploaded_file_path: {
+          required: true,
+          uploaderror: true
+        },
+        when_photo_taken: "required",
+        share_your_thoughts: "required",      
+        terms_and_conditions: "required"          
+      },
+      messages: {
+        nric_passport: {
+          nricalreadyexist: "This number has already submitted an entry."
+        },
+        Email: {
+          email: "Invalid email."
+        },
+        terms_and_conditions: {
+          required: "Please check the box and confirm that you have read and agreed to the Terms and Conditions of this contest before submitting."
+        }     
+      },
+      errorPlacement: function(error, element) {      
+        error.insertAfter(element);
+      },
+      submitHandler: function(form) {
+        // var nric = $("#nric").val();
+        // var email = $("#email").val();
+
+        // if(isInArray(nric, nrics)) {
+        //   alert("This nric has already been used to register.")
+        // } else if(isInArray(email, emails)) {
+        //   alert("This email has already been used to register.")
+        // } else {        
+          $('input[type="submit"]').prop('disabled', true);
+          $('#file_upload').uploadifive('upload');      
+        // }    
+      }            
+    });
+
+    $.validator.addMethod("nricalreadyexist", function(value, element) {
+       return nrics.indexOf(value) == -1;
+     }, "This number has already submitted an entry.");
+
+    $.validator.addMethod("emailalreadyexist", function(value, element) {
+       return emails.indexOf(value) == -1;
+     }, "This email has already been used to register.");
+
+    $.validator.addMethod("mobilecheck", function(value, element, regexp) {
+      return /^\+?\d+$/.test(value); 
+    }, "Please enter a valid mobile number. ");
+
+    $.validator.addMethod("uploaderror", function(value, element, regexp) {
+      if($(".uploadifive-queue-item").hasClass('error')) {
+        return false;   
+      } else {
+        return true;
+      }
+      
+    }, "File too large. Please upload a jpg lesser than 2mb.");
+
+    $.get("get_registered_email.php", function(data){
+      var data = JSON.parse(data);
+
+      $.each(data, function(i, v){
+        emails.push(v);
+      });
+
+      console.log(emails)
+
+    });  
+
+    $.get("get_registered_nric.php", function(data){
+      var data = JSON.parse(data);
+
+      $.each(data, function(i, v){
+        nrics.push(v);
+      });
+
+      console.log(nrics)
+
+    });  
+
+    $("#when_photo_taken").on("change", function(){
+      $(this).blur();
+    });
+  }
+
+}
+
+
+sgpool.page.Default.prototype.textarea_count = function(){
+
+  $("textarea").keyup(function(){
+    max = this.getAttribute("maxlength");
+    var len = $(this).val().length;
+    if (len >= max) {
+      $('#number_of_char').text('0 character remaining');
+    } else {
+      var char = max - len;
+      $('#number_of_char').text(char + ' characters remaining');
+    }
+  });
+
+}
+
+sgpool.page.Default.prototype.pop_up = function(){
+
+  var hash = window.location.hash;
+
+  if(hash=="#terms") {
+    $("#pop-up").fadeIn();      
+    $("#body-wrap").addClass('disabled');
+  }    
+
+  $("#open-terms-popup").click(function(e){
+    // e.preventDefault();
+    $("#pop-up").fadeIn();      
+    $("#body-wrap").addClass('disabled');
+  });
+  
+  if($('#pop-up-content').length > 0) {
+    $('.open-popup').click(function(e) { 
+      e.preventDefault();
+
+      $("#pop-up").fadeIn();      
+      $("#body-wrap").addClass('disabled');
+      
+      if($("#pop-up-slider").length > 0) {
+        $('#pop-up-slider').get(0).slick.setPosition();
+
+        $('#pop-up-slider').slick('slickGoTo', $(this).data('entry-index'));        
+      }
+    });   
+
+    $(".close-popup").click(function(e){
+      e.preventDefault();
+      $("#pop-up").fadeOut();
+      $("#body-wrap").removeClass('disabled')
+    });
+
+    $(document).on('click touchstart', function(event) {
+
+      //if you click on anything except the modal itself or the "open modal" link, close the modal
+      if (!$(event.target).closest("#open-terms-popup,#pop-up-content,.open-popup").length) {
+        $("body").find("#pop-up").fadeOut();
+        $("body").removeClass('disabled')
+      }
+    });
+  }
+
+  if($("#pop-up-slider").length > 0) {
+    $("#pop-up-slider").slick({
+      'speed': 350,
+      'dots': false,
+      'arrows': true,
+      'infinite': true,
+      'slidesToShow': 1,
+      'slidesToScroll': 1,
+      'autoplay': false
+    });
+
+    $("#pop-up-slider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      var name = $(slick.$slides[nextSlide]).data("name");
+      var when = $(slick.$slides[nextSlide]).data("when");
+      var thoughts = $(slick.$slides[nextSlide]).data("thoughts");
+
+      $("#pop-up-content").find(".name").text(name);
+      $("#pop-up-content").find(".when").text(when);
+      $("#pop-up-content").find(".thoughts").text(thoughts);
+    });
+  }
+  
+}
+
+sgpool.page.Default.prototype.upload_file = function(){
+
+  var contestForm = $("#contest-form");
+
+  if($('#file_upload').length > 0) {
+    $('#file_upload').uploadifive({
+      'auto'         : false,
+      'buttonClass'  : 'customUploadBtn',
+      'fileType'     : 'image/jpg',
+      'fileSizeLimit' : 2000,
+      'buttonText'   : '',
+      'truncateLength' : 22,
+      // 'uploadLimit'  : 1,
+      'multi'        : false,
+      'queueSizeLimit' : 1,
+      'uploadScript' : 'uploadifive.php',
+      'onUploadComplete' : function(file, data) {
+        $("#uploaded_file_path").val(data);
+        console.log('upload completed and ajaxing...');
+
+        $.ajax({
+            type: contestForm.attr('method'),
+            url: contestForm.attr('action'),
+            data: contestForm.serialize(),
+            success: function (data) {
+                console.log('Submission was successful.');
+                console.log(data);
+
+                $('#message-container').append('<p class="message">Thank you for sending us your entry! You will receive a confirmation email regarding your submission shortly.</p><p class="message">We will review your entry and all winners will be contacted regarding their prize collection by 6th June 2018.</p><a href="entries.php" class="square-cta see-more-entries">See other entries</a>');
+                TweenLite.to(window, 0.8, {scrollTo:"div[data-value='form']"});
+
+                contestForm.hide();
+
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            },
+        });
+
+      },
+      'onSelect' : function(queue) {
+        $("#uploaded_file_path").val('file_uploaded');
+        $(".upload-label").text('');
+        // if(!$("#uploaded_file_path").hasClass('error')) {
+          $("#uploaded_file_path").blur();
+        // }
+      },
+      'onCancel'     : function() {
+        $("#uploaded_file_path").val('');
+        $(".uploadifive-queue-item").remove();
+        $(".upload-label").text('Choose a file to upload');
+        $("#uploaded_file_path").blur();
+      },
+      // 'onError'      : function(errorType) {
+      //     if(errorType=="FILE_SIZE_LIMIT_EXCEEDED") {
+      //       errors = { uploaded_file_path: "This file is too big. Please upload an image lesser than 2mb." };
+      //       validator.showErrors(errors);
+      //     }
+      // }
+    });
+  }
+  
+
+}
 
 
 //    _        _ __   _____  _   _ _____

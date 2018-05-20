@@ -81,7 +81,7 @@ ob_start();
                     <div class="text-container">
                       <h2>Football With A Heart 2018</h2>
                       <p>Visit the Gallery for the event photos!</p>
-                      <a href="#" class="square-cta">Click Here!</a>
+                      <a href="#" class="square-cta">See More</a>
                     </div>
                   </div>
                 </div>
@@ -190,7 +190,7 @@ ob_start();
 
                         -->
 
-                        <div class="page-events-slider-item" data-month="4" data-geo-lat="1.3529944" data-geo-lng="103.94039739999994" data-image-desktop="images_cms/events/events-slider-05v3.jpg" data-expired="0" data-expired-title="Football With A Heart 2018" data-expired-link="gallery.html#football">
+                        <div class="page-events-slider-item" data-month="4" data-geo-lat="1.3529944" data-geo-lng="103.94039739999994" data-image-desktop="images_cms/events/events-slider-05v4.jpg" data-expired="0" data-expired-title="Football With A Heart 2018" data-expired-link="gallery.html#football">
                           <div class="page-default-event-box events-version">
                             <!-- <div class="tag-container"><h6>Public</h6></div>                     -->
                             <div class="text-container">
@@ -400,12 +400,13 @@ ob_start();
                         <div class="tag-container"><h6>Public</h6></div>
                         <div class="manic-image-container">
                           <img src="" class="img-responsive" 
-                            data-image-desktop="images_cms/events/upcoming-events-05v2.jpg" alt="">
+                            data-image-desktop="images_cms/events/upcoming-events-05v3.jpg" alt="">
                         </div>
                         <div class="text-container">
                           <!-- <h6>FUNDRAISING TOURNAMENT</h6> -->
                           <h3>Football With A Heart 2018</h3>
-                          <p>Swing by to be present at Singapore’s largest football charity fundraiser, Football With A Heart (FWAH)!</p>
+                          <p>Swing by to be present at Singapore’s largest football charity
+                          fundraiser, Football With A Heart (FWAH)!</p>
                         </div>
                       </div>
 
@@ -596,8 +597,8 @@ ob_start();
                 </a>        
                 <div class="manic-image-container">
                   <img src="" class="img-responsive"
-                    data-image-tablet="images_cms/events/event-05-tabletv2.jpg"
-                    data-image-mobile="images_cms/events/event-05-mobilev2.jpg" alt="">
+                    data-image-tablet="images_cms/events/event-05-tabletv3.jpg"
+                    data-image-mobile="images_cms/events/event-05-mobilev3.jpg" alt="">
                 </div>                              
               </div> <!-- end page-events-slider-item -->
 
@@ -686,7 +687,7 @@ ob_start();
                 <div class="completed-text-container">
                   <h2>A GOOD DAY OUT by Tote Board</h2>
                   <p>Visit the Gallery for the event photos!</p>
-                  <a href="gallery.html#tote" class="square-cta">Click Here!</a>
+                  <a href="gallery.html#tote" class="square-cta">See More</a>
                 </div>
                 <a href="events-a-good-day-out.html" class="overlay-container">
                   <div class="date-title-container">
@@ -725,7 +726,7 @@ ob_start();
                 <div class="completed-text-container">
                   <h2>Chingay 2018</h2>
                   <p>Visit the Gallery for the event photos!</p>
-                  <a href="gallery.html#chingay" class="square-cta">Click Here!</a>
+                  <a href="gallery.html#chingay" class="square-cta">See More</a>
                 </div>
                 <a href="events-chingay.html" class="overlay-container">
                   <div class="date-title-container">

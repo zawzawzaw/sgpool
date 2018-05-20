@@ -23,7 +23,8 @@
 
 
     <!-- INSERT CSS HERE -->
-    <link rel="stylesheet" type="text/css" href="sgpool_assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="sgpool_assets/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="sgpool_assets/css/milestones.css">
 
     <!-- INSERT JS HERE -->
     <script type="text/javascript" src="sgpool_assets/js/manic-polyfill.js"></script>
@@ -38,13 +39,14 @@
     <script type="text/javascript" src="sgpool_assets/libs/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
     <script type="text/javascript" src="sgpool_assets/libs/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
     <script type="text/javascript" src="sgpool_assets/libs/slick-carousel/slick/slick.min.js"></script>
-    <script type="text/javascript" src="sgpool_assets/libs/isotope/isotope.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css">
+    <script src="sgpool_assets/js/minified/milestones.js"></script>
     
     <!-- Google Closure -->
     <script type="text/javascript" src="sgpool_assets/libs/google-closure/closure-library/closure/goog/base.js"></script>
     <script type="text/javascript" src="sgpool_assets/js/google-closure-dependency-list.js"></script>
     <script type="text/javascript">
-      goog.require('sgpool.page.Milestones');
+      goog.require('sgpool.page.Default');
     </script>
 
     <script type="text/javascript" src="sgpool_assets/js/minified/head.load.min.js"></script>
@@ -52,7 +54,7 @@
     <script type="text/javascript">
 
       jQuery(document).ready(function($) {
-        page = new sgpool.page.Milestones({});
+        page = new sgpool.page.Default({});
       });
       
     </script>
@@ -71,8 +73,8 @@
 
     -->
 
-    <script type="text/javascript" src="sgpool_assets/js/minified/head.load.min.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript" src="sgpool_assets/js/minified/head.load.min.js"></script> -->
+    <!-- <script type="text/javascript">
 
       var PAGE_LIBRARY        = "sgpool_assets/js/minified/libraries-milestones.min.js";
       var PAGE_JS             = "sgpool_assets/js/minified/page-milestones.min.js";
@@ -86,6 +88,6 @@
           window.page = new sgpool.page.Milestones({});
         });
       });
-    </script>
+    </script> -->
 
   <?php endif; ?>

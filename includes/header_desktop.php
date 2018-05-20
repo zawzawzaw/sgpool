@@ -32,10 +32,11 @@
     <div id="header-desktop-menu">
       <nav>
         <ul>
-          <li><a href="javascript:void(0);" data-page="page-milestones">Our Moments</a></li>
-          <li><a href="javascript:void(0);" data-page="page-museum">Our Heritage</a></li>
+          <li><a href="our-moments.html" data-page="page-milestones">Our Moments</a></li>
+          <li><a href="our-heritage.html" data-page="page-museum">Our Heritage</a></li>
           <li><a href="events.html" data-page="page-events">Events</a></li>
           <li><a href="gallery.html" data-page="page-gallery">Gallery</a></li>
+          <li><a href="contest.html" data-page="page-contest">Contest</a></li>
         </ul>
       </nav>
     </div> <!-- header-desktop-menu -->

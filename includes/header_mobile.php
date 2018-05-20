@@ -30,14 +30,15 @@
 
 </header> <!-- header-mobile -->
 
-<div id="header-mobile-expand">  
+<div id="header-mobile-expand" class="hidden-lg">  
   <div id="header-mobile-nav-container">
     <nav>
       <ul>        
-        <li><a href="#">Our Moments</a></li>
-        <li><a href="#">Our Heritage</a></li>        
+        <li><a href="our-moments.html">Our Moments</a></li>
+        <li><a href="our-heritage.html">Our Heritage</a></li>        
         <li><a href="events.html">Events</a></li>
         <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contest.html">Contest</a></li>
       </ul>
     </nav>
   </div>

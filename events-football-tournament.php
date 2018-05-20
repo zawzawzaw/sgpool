@@ -44,15 +44,16 @@ ob_start();
                           <!-- <div class="tag-container"><h6>Public</h6></div>                     -->
                           <div class="manic-image-container">
                             <img src="" class="img-responsive" 
-                              data-image-tablet="images_cms/events/event-05-tabletv2.jpg" 
-                              data-image-mobile="images_cms/events/event-05-mobilev2.jpg" alt="">
+                              data-image-tablet="images_cms/events/event-05-tabletv3.jpg" 
+                              data-image-mobile="images_cms/events/event-05-mobilev3.jpg" alt="">
                           </div>
                           <div class="text-container">
                             <h3>Football With A Heart 2018</h3>
-                            <p>Swing by to be present at Singapore’s largest football charity fundraiser, Football With A Heart (FWAH)!</p>
-                            <p>Over the past few edition, we have raised S$XXXXX in aids of X beneficiaries with more than XXX organisations on-board for a good cause.</p>
+                            <p>Swing by to be present at Singapore’s largest football charity
+                            fundraiser, Football With A Heart (FWAH)!</p>
+                            <p>Over the past few edition, we have raised more than S2.2 million in aid of many beneficiaries with organisations from different industry coming together for a good cause.</p>
                             <p>In its fifth edition, FWAH will welcome about 900 footballers from various corporations for a friendly five-a-side football tournament. Catch our Parliamentarian Team and Team Public Service in action as they pit against each other at the celebrity matches. Be there to cheer for them!</p>
-                            <p>The event is fully funded by organising partners and supported by venue partner. All proceeds from the event go to designated charities.</p>
+                            <p>The event is fully funded by organising partners and supported by venue partner, Our Tampines Hub. All proceeds from the event go to designated charities.</p>
                             <p><b>Venue</b><br>
                             Our Tampines Hub (Town Square)</p>
                             <p><b>Admission</b><br>

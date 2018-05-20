@@ -37,7 +37,7 @@ ob_start();
 
       -->
 
-      <article id="page-default-banner-section" class="gallery-version">
+      <article id="page-default-banner-section" class="short-banner-version">
 
         <div id="page-default-banner-slider" class="sgpool-slick-slider">
           
@@ -64,7 +64,7 @@ ob_start();
               </div>
             </div>
 
-            <div id="page-default-banner-caption-container" class="gallery-version">
+            <div id="page-default-banner-caption-container" class="short-banner-version">
               <div class="container-fluid">
                 <div class="row">                  
 
@@ -699,13 +699,13 @@ ob_start();
                         </div>
                       </div> <!--  end page-gallery-event-grid-slider-item -->
 
-                      <div class="page-gallery-event-grid-slider-item">
+                      <!-- <div class="page-gallery-event-grid-slider-item">
                         <div class="manic-image-container">
                           <img src="" data-image-desktop="images_cms/gallery/gallery-event-kick-off-grid-04.jpg"
                                 data-image-tablet="images_cms/gallery/gallery-event-kick-off-grid-04-tablet.jpg"
                                 data-image-mobile="images_cms/gallery/gallery-event-kick-off-grid-04-mobile.jpg">
                         </div>
-                      </div> <!--  end page-gallery-event-grid-slider-item -->
+                      </div> --> <!--  end page-gallery-event-grid-slider-item -->
 
                       <div class="page-gallery-event-grid-slider-item">
                         <div class="manic-image-container">

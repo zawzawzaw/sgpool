@@ -4,8 +4,7 @@ ob_start();
 <?php
   global $current_page;
   $current_page = "page-milestones";
-  $page_title = "Milestones";
-
+  $page_title = "Our Moments";
 ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
@@ -19,7 +18,7 @@ ob_start();
 <body class="<?php echo $current_page; ?>"> <!-- home-expand-header-version -->
   <!-- only the home page has the class home-expand-header-version by default -->
 
-  <?php include "includes/preloader.php"; ?>
+  <?php //include "includes/preloader.php"; ?>
 
   <?php include "includes/header_desktop.php"; ?>
   <?php include "includes/header_mobile.php"; ?>
@@ -28,594 +27,747 @@ ob_start();
   <div class="header-mobile-spacer visible-xs visible-sm"></div>
 
   <div id="page-wrapper">
-    <div id="page-wrapper-content">   
-        
-        <div id="page-milestones-indicators-container">
-          <div class="container-fluid">
+    <!-- <div id="headerMargin"></div> -->
+    <div id="page-wrapper-content">
+      <div id="milestones-wrapper">
+        <div class="col-md-12">
+          <div id="navStickyStart"></div>
+          <svg id="blueLineSVG" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path id="blue" stroke="#ffffff" stroke-width="3" fill="none" d=""></path>
+          </svg>
+          <div class="col-md-1" id="year-nav">
             <div class="row">
-              <div class="col-md-1">
-                <div id="start-sticky-trigger"></div>
-                
-                <div class="wrap">
-                  <div id="page-milestones-indicators" class="page-indicators">
-                    <ul id="page-milestones-indicators-ul">
-                        <li id="content-group-indicator-1" class="content-gorup-indicator">
-                          <a href="#1968" class="indicator-links">1960s</a>
-                          <ul>
-                            <li><a href="#1968">1968</a></li>
-                            <li><a href="#1969">1969</a></li>
-                          </ul>
-                          <ul id="decades" class="visible-xs visible-sm">
-                            <li><a href="#1970s">1970s</a></li>
-                            <li><a href="#1980s">1980s</a></li>
-                            <li><a href="#1990s">1990s</a></li>
-                            <li><a href="#2000s">2000s</a></li>
-                            <li><a href="#2010s">2010s</a></li>
-                          </ul>
-                        </li>
-                        <li id="content-group-indicator-2" class="content-gorup-indicator">
-                          <a href="#1972" class="indicator-links">1970s</a>
-                          <ul>
-                            <li><a href="#1972">1972</a></li>
-                            <li><a href="#1973">1973</a></li>
-                          </ul>
-                          <ul id="decades" class="visible-xs visible-sm">
-                            <li><a href="#1960s">1960s</a></li>
-                            <li><a href="#1980s">1980s</a></li>
-                            <li><a href="#1990s">1990s</a></li>
-                            <li><a href="#2000s">2000s</a></li>
-                            <li><a href="#2010s">2010s</a></li>
-                          </ul>
-                        </li>
-                        <li id="content-group-indicator-3" class="content-gorup-indicator">
-                          <a href="#1980" class="indicator-links">1980s</a>
-                          <ul>
-                            <li><a href="#1980">1980</a></li>
-                            <li><a href="#1986">1986</a></li>
-                            <li><a href="#1988">1988</a></li>
-                            <li><a href="#1989">1989</a></li>
-                          </ul>
-                          <ul id="decades" class="visible-xs visible-sm">
-                            <li><a href="#1960s">1960s</a></li>
-                            <li><a href="#1970s">1970s</a></li>
-                            <li><a href="#1990s">1990s</a></li>
-                            <li><a href="#2000s">2000s</a></li>
-                            <li><a href="#2010s">2010s</a></li>
-                          </ul>
-                        </li>
-                        <li id="content-group-indicator-4" class="content-gorup-indicator">
-                          <a href="#1991" class="indicator-links">1990s</a>
-                          <ul>
-                            <li><a href="#1991">1991</a></li>
-                            <li><a href="#1993">1993</a></li>
-                            <li><a href="#1996">1996</a></li>
-                            <li><a href="#1999">1999</a></li>
-                          </ul>
-                          <ul id="decades" class="visible-xs visible-sm">
-                            <li><a href="#1960s">1960s</a></li>
-                            <li><a href="#1970s">1970s</a></li>
-                            <li><a href="#1980s">1980s</a></li>
-                            <li><a href="#2000s">2000s</a></li>
-                            <li><a href="#2010s">2010s</a></li>
-                          </ul>
-                        </li>
-                        <li id="content-group-indicator-5" class="content-gorup-indicator">
-                          <a href="#2000" class="indicator-links">2000s</a>
-                          <ul>
-                            <li><a href="#2000">2000</a></li>
-                            <li><a href="#2002">2002</a></li>
-                            <li><a href="#2003">2003</a></li>
-                            <li><a href="#2004">2004</a></li>
-                            <li><a href="#2005">2005</a></li>
-                            <li><a href="#2007">2007</a></li>
-                            <li><a href="#2008">2008</a></li>
-                          </ul>
-                          <ul id="decades" class="visible-xs visible-sm">
-                            <li><a href="#1960s">1960s</a></li>
-                            <li><a href="#1970s">1970s</a></li>
-                            <li><a href="#1980s">1980s</a></li>
-                            <li><a href="#1990s">1990s</a></li>
-                            <li><a href="#2010s">2010s</a></li>
-                          </ul>
-                        </li>
-                        <li id="content-group-indicator-6" class="content-gorup-indicator">
-                          <a href="#2010" class="indicator-links">2010s</a>
-                          <ul>
-                            <li><a href="#2010">2010</a></li>
-                            <li><a href="#2012">2012</a></li>
-                            <li><a href="#2013">2013</a></li>
-                            <li><a href="#2015">2015</a></li>
-                            <li><a href="#2016">2016</a></li>
-                            <li><a href="#2017">2017</a></li>
-                          </ul>
-                          <ul id="decades" class="visible-xs visible-sm">
-                            <li><a href="#1960s">1960s</a></li>
-                            <li><a href="#1970s">1970s</a></li>
-                            <li><a href="#1980s">1980s</a></li>
-                            <li><a href="#1990s">1990s</a></li>
-                            <li><a href="#2000s">2000s</a></li>
-                          </ul>
-                        </li>
-                      </ul>  
-                  </div>
-                </div>
-              </div>     
+              <div class="decade active">
+                <p><a href="#ms1968">1960s   </a></p>
+              </div>
+              <div class="decade">
+                <p><a href="#ms1973">1970s    </a></p>
+              </div>
+              <div class="decade">
+                <p><a href="#ms1986">1980s</a></p>
+              </div>
+              <div class="decade">
+                <p><a href="#ms1991">1990s</a></p>
+              </div>
+              <div class="decade">
+                <p><a href="#ms2000">2000s</a></p>
+              </div>
+              <div class="decade">
+                <p><a href="#ms2010">2010s</a></p>
+              </div>
             </div>
-          </div>        
-        </div>
-
-        <article id="page-milestones-container"> 
-
-          <div id="page-milestones-seperator-line-container">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-1 col-md-push-1">
-                  <div id="page-milestones-seperator-line"></div>
+          </div>
+          <div id="milestones">
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-2" id="ms1968">
+                <div class="row">
+                  <h3>1968</h3>
+                  <h5>In the beginning</h5>
+                  <p class="indent">23 May - Founded on 23 May 1968 to curb illegal gambling and to channel surpluses to help worthy causes in Singapore.</p><img class="indent" src="images_cms/our_moments/1968.jpg" alt="">
+                </div>
+              </div>
+              <div class="milestone ms--out milestone--card col-md-4" id="ms1968_2">
+                <div class="row">
+                  <h3 class="desktop-only" style="opacity:0">.</h3>
+                  <h5>TOTO Launch</h5>
+                  <p class="shrink">9 Jun – We launched our first TOTO game, a legalized form of lottery sold in Singapore, with the top prize set at a minimum of $100, 000.</p>
                 </div>
               </div>
             </div>
-          </div>        
-
-          <div class="container-fluid">
-            
-            <!-- <div class="row">               -->
-
-              <!-- <div class="col-md-1"></div> -->
-              
-              <!-- <div class="col-md-11">                 -->                
-
-                <div id="page-milestones-content" class="row">                                  
-                                    
-                  <div id="content-group-1" class="page-content-group">
-                    <div class="col-md-4 col-md-offset-2">
-                      <div id="trigger-content-group-1" class="scroll-target" data-value="1960s"></div>
-                      <div id="item-1" class="floating-item"> 
-                        <div class="scroll-target" data-value="1968"></div>
-                        <div class="text-container">
-                          <h2>1968</h2>
-                          <p>Singapore Pools was founded on 23 May 1968.</p>
-                        </div>                                         
-                        <div class="manic-image-container full-col-width-version">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-1968.jpg"
-                            data-image-tablet="images_cms/milestones/year-1968-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-1968-mobile.jpg" alt="">
-                        </div>
-                      </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-3 col-md-offset-8" id="ms1969">
+                <div class="row">
+                  <div class="white-bg">
+                    <h3>1969</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>The Sweep Start</h5>
+                  </div>
+                  <p class="indent">
+                    28 Feb – The Singapore Sweep with S$400,000 prize money as the first prize wasintroduced. Each Sweep ticket cost S$1, a sum considered astronomical at that time.
+                    Proceeds from Sweep tickets were used to fund national infrastructures, such as the
+                    National Stadium.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-3 col-md-offset-8" id="ms1969_2">
+                <div class="row">
+                  <div class="white-bg">
+                    <h5>First Charity Donation</h5>
+                  </div>
+                  <p class="indent">The first contribution to charity was a donation made to the <br>Ministry of Social Welfare’s General Relief Fund.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-3 col-md-offset-3" id="ms1973">
+                <div class="row">
+                  <div class="white-bg">
+                    <h3>1973</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>National Stadium</h5>
+                  </div>
+                  <p class="indent shrink85">
+                    Jan – Proceeds from our lottery games contributed to the construction of Singapore's firstsporting facility - the National Stadium. The national icon, officially launched on 21 July
+                    1973 by Singapore's first Prime Minister Lee Kwan Yew, was built at a cost of S$50
+                    million, of which Singapore Pools contributed S$14.5 million.
+                  </p>
+                </div>
+              </div>
+              <div class="milestone ms--out milestone--card col-md-5" id="ms1973_2">
+                <div class="row"><img src="images_cms/our_moments/1973.jpg" alt=""></div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--full col-md-11 col-md-offset-1" id="ms1986">
+                <div class="row">
+                  <div class="bg"><img src="images_cms/our_moments/1986.jpg" alt=""></div>
+                  <div class="line line1">
+                    <div class="white"></div>
+                  </div>
+                  <div class="line line2">
+                    <div class="white"></div>
+                  </div>
+                  <div class="content">
+                    <h3>1986</h3>
+                    <h5>Singapore Indoor Stadium</h5>
+                    <p>
+                      Jan – Gaming surpluses contributed to the development of another national icon - theSingapore Indoor Stadium. We donated S$45 million to its construction.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-2" id="ms1987">
+                <div class="row">
+                  <div class="white-square">
+                    <h3>1987</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>Getting into SHARE</h5>
+                  </div>
+                  <p class="indent">
+                    Jan - Our staff pledged part of their salaries in aid of the underprivileged in society throughthe Social Help and Assistance Raised by Employees' (SHARE) programme, an initiative
+                    by the National Council of Social Service. This commitment continues till today.
+                  </p><img class="indent" src="images_cms/our_moments/1987.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-4 col-md-offset-7" id="ms1989">
+                <div class="row">
+                  <div class="milestone ms--out milestone--card">
+                    <h3>1989   </h3>
+                    <h5>Community clubs</h5>
+                    <p class="indent">
+                      In support of community bonding and social cohesion, we provided monetary support($XXX) towards the construction and upgrading of community clubs around Singapore.
+                      Community clubs are an essential part of strengthening the social fabric in the community
+                      as they provide a common space for activities and events to take place.
+                    </p><img class="indent" src="images_cms/our_moments/1989.jpg" alt="">
+                  </div><br>
+                  <div class="milestone ms--out milestone--card">
+                    <div class="white-bg">
+                      <h5>Help for those who need it</h5>
                     </div>
-
-                    <div class="col-md-4 col-md-offset-1">                      
-                      <div id="item-2" class="floating-item">
-                        <div class="scroll-target" data-value="1969"></div>
-                        <div class="text-container">              
-                          <h2>1969</h2>
-                          <p>Introduced the Singapore Sweep on 28 February 1968 with $400,000 as the first prize.</p>
-                        </div>
-                        <div class="manic-image-container full-col-width-version">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-1969.jpg"
-                            data-image-tablet="images_cms/milestones/year-1969-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-1969-mobile.jpg" alt="">
-                        </div>
-                      </div>
+                    <p class="indent">
+                      We partnered National Kidney Foundation (NKF) to provide affordable dialysis services forneedy kidney patients. Funded NKF's third dialysis centre at Bedok in 1989 with S
+                      $300,000. In 1994, an additional S$500,000 in contributions was made to National Trades
+                      Union Congress to fund the tenth NKF centre at Tampines. 
+                    </p><img class="indent" src="images_cms/our_moments/1989-2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-2" id="ms1991">
+                <div class="row"><img class="indent" src="images_cms/our_moments/1991.jpg" alt="">
+                  <div class="white-bg">
+                    <h3>1991</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>National Day Parade</h5>
+                  </div>
+                  <p class="indent">
+                    We are the principal sponsor of the National Day Parade since 1991. Today, we are stillone of the key sponsors of this iconic national event.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-3" id="ms1993">
+                <div class="row">
+                  <div class="white-square">
+                    <h3>1993</h3>
+                  </div>
+                  <h5>Sports Excellence</h5>
+                  <p>
+                    Jan – In support of Sports Excellence 2000 (SPEX 2000) national programme, wepledged a S$20-million contribution over a 5-year period. The support continued from
+                    1998 to 2002 with another S$20 million contribution. 
+                  </p><img src="images_cms/our_moments/1993.jpg" alt="">
+                </div>
+              </div>
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-1" id="ms1994">
+                <div class="row">
+                  <div class="white-bg"><img class="white-v" src="images_cms/our_moments/1994.jpg" alt=""></div>
+                  <div class="white-bg">
+                    <h3>1994</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>Corporate Distinguished Platinum Award</h5>
+                  </div>
+                  <p class="indent indent-r">Jan - With our long-standing support to National Council of Social Service, we were awarded the National Council of Social Service’s highest award, the Corporate Distinguished Platinum Award for our contribution. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-2" id="ms1995">
+                <div class="row">
+                  <div class="white-bg">
+                    <h3>1995</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>Chingay</h5>
+                  </div>
+                  <p class="indent">
+                    Feb - To promote community cohesiveness through cultural events, we have beenChingay's (Asia’s largest street performance and float festival) Principal Founding Sponsor
+                    since 1995. 
+                  </p><img class="indent" src="images_cms/our_moments/1995.jpg" alt="">
+                </div>
+              </div>
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-1" id="ms1995_2">
+                <div class="row">
+                  <h3 class="desktop-only" style="opacity:0">.</h3>
+                  <h5>A push for S. League</h5>
+                  <p>
+                    Jun - To establish support for local football, we contributed S$9.7 million between 1995and 1997 to the Singapore Professional Football League (S.League), which kicked off its
+                    first season in 1996.
+                  </p><img class="indent-r" src="images_cms/our_moments/1995-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--full col-md-11 col-md-offset-1" id="ms1996">
+                <div class="row">
+                  <div class="bg"><img src="images_cms/our_moments/1996.jpg" alt=""></div>
+                  <div class="line line1">
+                    <div class="white"></div>
+                  </div>
+                  <div class="line line2">
+                    <div class="white"></div>
+                  </div>
+                  <div class="content">
+                    <h3>1996</h3>
+                    <h5>Esplanade - Theatres on the Bay</h5>
+                    <p>
+                      Jan – Committed to a S$409 million contribution to fund The Esplanade - Theatres on theBay arts complex, in support of our nation's vision to be a vibrant hub of artistic activity
+                      and showcase for international and local talents.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-3" id="ms1998">
+                <div class="row">
+                  <div class="white-bg">
+                    <h3>1998</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>Mount Everest</h5>
+                  </div>
+                  <p class="indent">
+                    Mar - As a long-term supporter in sports, we sponsored the first Mount Everest Expeditionwith preliminary support of S$30,000.</p><img class="indent" src="images_cms/our_moments/1998.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-3 col-md-offset-8" id="ms1999">
+                <div class="row">
+                  <h3 class="indent">1999</h3>
+                  <h5 class="indent" style="background: none">SCORE for football</h5>
+                  <p class="indent">
+                    30 Mar – In support of professional football development, SCORE was launched, as alegal channel for football betting in Singapore.</p>
+                </div>
+              </div>
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-8" id="ms2000">
+                <div class="row">
+                  <div class="white-bg">
+                    <h3>2000</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>President's Challenge</h5>
+                  </div>
+                  <p class="indent">
+                    Extending our support in the social service sector, we have been supporting President’sChallenge since its inception in 2000.</p><img class="indent" src="images_cms/our_moments/2000.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-2" id="ms2002">
+                <div class="row">
+                  <div class="white-square">
+                    <h3>2002</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>STRIKE</h5>
+                  </div>
+                  <p class="indent">
+                    26 Apr – With the rising interest in oversea football betting, STRIKE! was introduced toprovide international football betting game.</p><br class="desktop-only"><br class="desktop-only">
+                  <div class="white-bg">
+                    <h5>Patron of the Arts</h5>
+                  </div>
+                  <p class="indent">
+                    Sep – As one of the pioneer supporters of the art scene, we were recognized as‘Distinguished Patrons of the Arts’, The award was presented to arts sponsors who
+                    deemed to have made sustained or substantial contributions to the arts in Singapore.
+                  </p><img class="indent" src="images_cms/our_moments/2002.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-7" id="ms2003">
+                <div class="row">
+                  <h3>2003</h3>
+                  <h5>First retail outlet</h5>
+                  <p>23 May - On our 35th anniversary, our first brick-and-mortar retail outlet at Jurong West</p><img class="indent" src="images_cms/our_moments/2003.jpg" alt=""><br class="desktop-only">
+                  <div class="white-bg">
+                    <h5>Fighting SARS</h5>
+                  </div>
+                  <p class="indent">
+                    12 Aug – To raise funds for various SARS-related community programmes, we launchedthe “Free Singapore from SARS” Sweep draw. Over S$770,000 was raised from the sale
+                    of Sweep tickets to increase awareness and prevention measures against the SARS
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-3" id="ms2003_2"><img src="images_cms/our_moments/2003-2.jpg" alt=""></div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-3 col-md-offset-3" id="ms2003_3">
+                <div class="row">
+                  <div class="white-h">
+                    <h5>iSHINE for the community </h5>
+                  </div>
+                  <div style="position:relative">
+                    <div id="iShineTitleBack">
+                      <p class="p--subtitle indent" style="position:absolute; left:0; top:0"></p>
                     </div>
-                  </div> <!-- end content-group-1 -->
-                  
-                  <div id="content-group-2" class="page-content-group">
-                    <div class="col-md-4 col-md-offset-3">
-                      <div id="trigger-content-group-2" class="scroll-target" data-value="1970s"></div>
-                      <div id="item-3" class="floating-item">                  
-                        <div class="scroll-target" data-value="1972"></div>
-                        <div class="text-container">
-                          <h2 id="test">1972</h2>
-                          <p>Moved from first office in Percival Road to Colombo Court.</p>
-                        </div>
-                        <div class="manic-image-container full-col-width-version">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-1972.jpg"
-                            data-image-tablet="images_cms/milestones/year-1972-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-1972-mobile.jpg" alt="">
-                        </div>
-                      </div>
+                    <div id="iShineTitle">
+                      <p class="p--subtitle indent">About iSHINE</p>
                     </div>
-
-                    <div class="col-md-11 col-md-offset-1">
-                      <div id="item-4" class="floating-item longest-height-version">        
-                        <div class="scroll-target" data-value="1973"></div>
-                        <div class="manic-image-container">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-1973.jpg"
-                            data-image-tablet="images_cms/milestones/year-1973-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-1973-mobile.jpg" alt="">
-                        </div>
-                        <div class="text-container absolute-version">
-                          <h2 id="test2">1973</h2>
-                          <p>Singapore Pools contributed $14.5 million to the development of the National Stadium.</p>
-                        </div>
-                      </div>
+                  </div>
+                  <div style="position:relative">
+                    <div id="iShineContentBack">
+                      <p class="indent" style="position:absolute; left:0; top:0"></p>
                     </div>
-                  </div> <!-- end content-group-2 -->
-                  
-                  <div id="content-group-3" class="page-content-group">
-                    <div class="col-md-4 col-md-offset-2">
-                      <div id="trigger-content-group-3" class="scroll-target" data-value="1980s"></div>
-                      <div id="item-5" class="floating-item">
-                        <div class="scroll-target" data-value="1980"></div>
-                        <div class="text-container">
-                          <h2>1980</h2>
-                          <p>Became a subsidiary of Temasek Holdings on 1 October 1980.</p>                        
-                        </div>                  
-                      </div>
-                      <div id="item-6" class="floating-item">     
-                        <div class="scroll-target" data-value="1986"></div>
-                        <div class="text-container">
-                          <h2>1986</h2>
-                          <p>Introduced 4-Digit (4D) lottery.</p>
-                        </div>     
-                        <div class="text-container">
-                          <p>Set up a computerised gaming system integrated to network of retail outlets.</p>
-                          
-                        </div>        
-                        <div class="manic-image-container full-col-width-version">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-1986.jpg"
-                            data-image-tablet="images_cms/milestones/year-1986-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-1986-mobile.jpg" alt="">
-                        </div>
-                      </div>
-                      <!-- <div id="item-7" class="floating-item long-verison">
-                        <div class="text-container">
-                          <p>Introduced 4-Digit (4D) lottery.</p>
-                        </div>
-                        <div class="manic-image-container full-col-width-version-2">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-1986-02.jpg"
-                            data-image-tablet="images_cms/milestones/year-1986-02-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-1986-02-mobile.jpg" alt="">
-                        </div>
-                      </div> -->
+                    <div id="iShineContent">
+                      <p class="indent">
+                        We launched iSHINE a staff community programme that actively promote '<b>I</b> <b>S</b>erve from the
+                        <b>H</b>eart and <b>I</b>n <b>N</b>urturing <b>E</b>veryone' to inculcate staff volunteerism in support of the
+                        community-at-large.
+                      </p>
                     </div>
-
-                    <div class="col-md-5 col-md-offset-1">
-                      <div id="item-8" class="floating-item">
-                        <div class="scroll-target" data-value="1988"></div>
-                        <div class="text-container">
-                          <h2>1988</h2>
-                          <p>Moved office from Colombo Court to International Plaza.</p>
-                        </div>                                        
-                      </div>                      
-                      <div id="item-9" class="floating-item long-height-version">
-                        <div class="scroll-target" data-value="1989"></div>
-                        <div class="text-container">
-                          <h2>1989</h2>
-                          <p>Singapore Pools sponsored $45 million to the development of the Singapore Indoor Stadium.</p>
-                        </div>                
-                        <div class="manic-image-container">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-1989.jpg"
-                            data-image-tablet="images_cms/milestones/year-1989-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-1989-mobile.jpg" alt="">
-                        </div>
-                      </div>                      
+                  </div><br>
+                </div>
+              </div>
+              <div class="milestone ms--out ms-photo-slider col-md-5" id="ms2003_4">
+                <div class="row">
+                  <div class="indent" id="ms2003Slick">
+                    <div><img src="images_cms/our_moments/ishine01.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/ishine02.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/ishine03.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/ishine04.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/ishine05.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/ishine06.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/ishine07.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-3 col-md-offset-3" id="ms2003_5">
+                <div class="row">
+                  <div class="white-bg">
+                    <h5>The Pinnacle Award</h5>
+                  </div>
+                  <p class="indent">
+                    Oct – Was recognised as the first organisation to receive the Community Chest PinnacleAward for being a true friend of charity and a distinguished corporate citizen. The award
+                    was presented to Singapore Pools by then President S.R Nathan. 
+                  </p><img class="indent" src="images_cms/our_moments/2003-4.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-7" id="ms2004">
+                <div class="row">
+                  <div class="white-bg">
+                    <h3>2004</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>Scratchit!</h5>
+                  </div>
+                  <p class="indent">
+                    30 Nov – Introduced ScratchIt!, a scratch-n-win game where proceeds went towards theestablishment of the Wildlife Reserves Singapore, National Heritage Board and Football
+                    Association of Singapore.
+                  </p><br class="desktop-only">
+                  <div class="white-bg">
+                    <h3 id="ms2005">2005</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>PoolzConnect</h5>
+                  </div>
+                  <p class="indent">
+                    13 Aug – Telephone betting service, PoolzConnect, was introduced. Customers with Poolsaccount could place football bets via the telephone.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-2" id="ms2006">
+                <div class="row">
+                  <div class="white-square">
+                    <h3>2006</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>World Lottery Convention</h5>
+                  </div>
+                  <p class="indent">
+                    12 Nov - We co-hosted the World Lottery Association Convention and Trade Show, whichwas held for the first time in Asia. The event attracted more than 1,000 participants from
+                    73 different countries. 
+                  </p><img class="indent" src="images_cms/our_moments/2006.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-7" id="ms2006_2">
+                <div class="row">
+                  <h5>SportsBuzz@POMO</h5>
+                  <p class="indent">
+                    Jun - Official opening of SportBuzz@POMO, Singapore Pools’ first entertainment venuethat offered ‘live’ sports betting. It was gradually rebranded as 'Livewire' in 2013 due to the
+                    re-location of the main office.
+                  </p>
+                </div>
+              </div>
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-7" id="ms2007">
+                <div class="row">
+                  <div class="white-bg">
+                    <h3>2007</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>Responsible Gaming</h5>
+                  </div>
+                  <p class="indent">
+                    13 Jun - The first annual Responsible Gaming Programme which aimed to create aresponsible gaming environment for all customers was launched. </p><img class="indent" src="images_cms/our_moments/2007.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-2" id="ms2007_2">
+                <div class="row">
+                  <div class="white-h">
+                    <h5>Sharing resources</h5>
+                  </div>
+                  <p class="indent">
+                    Under a resource sharing initiative, Singapore Pools availed the second-floor of its retailoutlet at Yishun Central in support of Clubilya (a non-profit drop-in centre for youths atrisk)
+                    on a rent-free basis for its operations.
+                  </p><img class="indent" src="images_cms/our_moments/2007-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-7" id="ms2007_3">
+                <div class="row">
+                  <h5>Fighting illegal betting</h5>
+                  <p class="indent">
+                    Partnered with National Crime Prevention Council (NCPC) to start the ‘Red Card Antiillegalbetting' campaign to raise awareness on the penalties of illegal betting. </p><img class="indent" src="images_cms/our_moments/2007-3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--full col-md-11 col-md-offset-1" id="ms2008">
+                <div class="row">
+                  <div class="bg"><img src="images_cms/our_moments/2008.jpg" alt=""></div>
+                  <div class="line line1">
+                    <div class="white"></div>
+                  </div>
+                  <div class="line line2">
+                    <div class="white"></div>
+                  </div>
+                  <div class="content">
+                    <h3>2008</h3>
+                    <h5>Formula One betting</h5>
+                    <p>
+                      4 Mar – In conjunction with Singapore's first Formula One (F1) race, sports betting on F1races was introduced.</p>
+                    <h5>SportsBuzz@Kranji</h5>
+                    <p>
+                      16 Aug - Official opening of SportBuzz@Kranji, our second entertainment venue that offer‘live’ sports betting.</p>
+                    <h5>Gardens by the Bay</h5>
+                    <p>
+                      To build on the national vision to transform Singapore into a Garden City, we contributed S$420 million to the development of another national icon - Gardens By The Bay, which
+                      was completed in 2012.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-3" id="ms2010">
+                <div class="row">
+                  <div class="white-square">
+                    <h3>2010</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>Responsible Gaming Ambassadors</h5>
+                  </div>
+                  <p class="indent">
+                    Apr – Introduced the Responsible Gaming Ambassador (“RGA”) Programme, whichprovided staff with essential training to provide assistance and information on responsible
+                    gaming.
+                  </p><img class="indent" src="images_cms/our_moments/2010.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-8" id="ms2010_2">
+                <div class="row">
+                  <div class="white-bg">
+                    <h5>Livewire outlets</h5>
+                  </div>
+                  <p class="indent">
+                    May & Dec - Official opening of premium sports betting venues, Livewire (Resorts WorldSentosa) and Livewire (Marina Bay Sands).</p>
+                </div>
+              </div>
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-8" id="ms2010_3">
+                <div class="row">
+                  <div class="white-bg">
+                    <h5>Protecting nature reserves</h5>
+                  </div>
+                  <p class="indent">
+                    Contributed to the development of Sungei Buloh Wetland Reserve, listed as an ASEANHeritage Park in 2003, which was fully completed in 2015.</p><img class="indent" src="images_cms/our_moments/2010-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-3" id="ms2010_4">
+                <div class="row">
+                  <h3 class="desktop-only" style="opacity:0">.</h3>
+                  <div class="white-h">
+                    <h5>With A Heart series</h5>
+                  </div>
+                  <div style="position:relative">
+                    <div id="heartTitleBack">
+                      <p class="p--subtitle indent" style="position:absolute; left:0; top:0"></p>
                     </div>
-                  </div> <!-- end content-group-3 -->
-
-                  <div id="content-group-4" class="page-content-group">
-                    <div class="col-md-11 col-md-offset-1">
-                      <div id="trigger-content-group-4" class="scroll-target" data-value="1990s"></div>
-                      <div id="item-10" class="floating-item longest-height-version">
-                        <div class="scroll-target" data-value="1991"></div>
-                        <div class="text-container absolute-version">
-                          <h2>1991</h2>
-                          <p>Became a principal sponsor of the National Day Parade and has been one of the key sponsors since.</p>
-                        </div>            
-                        <div class="manic-image-container">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-1991.jpg"
-                            data-image-tablet="images_cms/milestones/year-1991-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-1991-mobile.jpg" alt="">
-                        </div>
-                      </div>
+                    <div id="heartTitle">
+                      <p class="p--subtitle indent">ABOUT WITH A HEART</p>
                     </div>
-
-                    <div class="col-md-4 col-md-offset-2">
-                      <div id="item-11" class="floating-item">
-                        <div class="scroll-target" data-value="1993"></div>
-                        <div class="text-container">
-                          <h2>1993</h2>
-                          <p>4D Sweep, a 4D game based on the Singapore Sweep draw results was launched on 7 April 1993.</p>
-                        </div>             
-                        <div class="manic-image-container full-col-width-version">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-1993.jpg"
-                            data-image-tablet="images_cms/milestones/year-1993-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-1993-mobile.jpg" alt="">
-                        </div>
-                      </div>                      
+                  </div>
+                  <div style="position:relative">
+                    <div id="heartContentBack">
+                      <p class="indent shrink85" style="position:absolute; left:0; top:0"></p>
                     </div>
-                    
-                    <div class="col-md-4 col-md-offset-1">
-                      <div id="item-12" class="floating-item">
-                        <div class="scroll-target" data-value="1996"></div> 
-                        <div class="text-container">                             
-                          <h2>1996</h2>
-                          <p>Introduced mission statement – “Towards Community Purpose and Benefit” on 17 July 1996. All gaming products’ logos were revamped.</p>
-                        </div>
-                      </div>
-                      <div id="item-13" class="floating-item">
-                        <div class="scroll-target" data-value="1999"></div> 
-                        <div class="text-container">                             
-                          <h2>1999</h2>
-                          <p>Singapore Pools became a member of World Lottery Association on 11 August 1999.</p>                          
-                        </div>
-                        <div class="text-container">                                        
-                          <p>Launched SCORE, a football betting game - in support of the local professional football development.</p>
-                        </div>
-                      </div>
-                      <!-- <div id="item-14" class="floating-item">                          
-                        <div class="text-container">                                        
-                          <p>Launched SCORE, a football betting game - in support of the local professional football development.</p>
-                        </div>
-                      </div> -->
-                    </div>                    
-                  </div> <!-- end content-group-4 -->
-
-                  <div id="content-group-5" class="page-content-group">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div id="trigger-content-group-5" class="scroll-target" data-value="2000s"></div>
-                      <div id="item-15" class="floating-item">
-                        <div id="trigger-content-5" class="scroll-target" data-value="2000"></div> 
-                        <div class="text-container">        
-                          <h2>2000</h2>                          
-                          <p>Singapore Turf Club ran 4D games every Wednesday evenings; Singapore Pools renamed 4D-Sweep draw to 4D draw.</p>
-                        </div>
-                      </div>
-                      <div id="item-16" class="floating-item long-height-version">                                         
-                        <div class="text-container">
-                          <p>First TOTO Hongbao draw was conducted on 11 February 2000 with a jackpot prize of $10 million.</p>
-                        </div>
-                        <div class="manic-image-container full-col-width-version">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2000.jpg"
-                            data-image-tablet="images_cms/milestones/year-2000-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2000-mobile.jpg" alt="">
-                        </div>
-                      </div>
+                    <div id="heartContent">
+                      <p class="indent shrink85">
+                        Organised the first 'With A Heart' fundraising event with Golf With A Heart, graced by then-
+                        Senior Minister Goh Chok Tong. The 'With A Heart' series of fundraising events, initiated
+                        by Singapore Pools, had raised more than S$3.8 million for worthy causes.
+                      </p>
                     </div>
-
-                    <div class="col-md-4 col-md-offset-2">
-                      <div id="item-17" class="floating-item">
-                      <div id="trigger-content-6" class="scroll-target" data-value="2002"></div>                         
-                        <div class="text-container">
-                          <h2>2002</h2>
-                          <p>Launched STRIKE!, an international football betting game.</p>                          
-                        </div>
-                      </div>
-                      <div id="item-18" class="floating-item long-height-version">                        
-                        <div class="text-container">
-                          <p>Pledged all net proceeds from the Singapore Sweep towards the development of the Esplanade – Theatres on the Bay.</p>
-                        </div>
-                        <div class="manic-image-container full-col-width-version-2">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2002.jpg"
-                            data-image-tablet="images_cms/milestones/year-2002-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2002-mobile.jpg" alt="">
-                        </div>
-                        <span class="small-caption">Photo courtesy of The Esplanade – Theatres on the Bay</span>
-                      </div>                      
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out ms-photo-slider col-md-4 col-md-offset-3" id="ms2010_5">
+                <div class="row">
+                  <div class="indent" id="ms2010Slick" style="z-index: 50">
+                    <div><img src="images_cms/our_moments/heart01.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/heart02.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/heart03.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/heart04.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/heart05.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/heart06.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/heart07.jpg" alt=""></div>
+                    <div><img src="images_cms/our_moments/heart08.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-8 col-md-offset-2" id="ms2011">
+                <div class="row">
+                  <div class="white-square">
+                    <h3>2011</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5 class="shrink">National Gallery Singapore</h5>
+                  </div>
+                  <p class="indent shrink85">
+                    To deepen support for the arts sector, we contributed to the development of the NationalGallery Singapore, which oversees the largest public collection of modern art in Singapore
+                    and Southeast Asia. The gallery officially opened in November 2015.
+                  </p><img class="indent" src="images_cms/our_moments/2011.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-3" id="ms2012">
+                <div class="row">
+                  <div class="white-bg">
+                    <h3>2012</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>Highest world standard in responsible gaming</h5>
+                  </div>
+                  <p class="indent">
+                    10 Sep - We achieved Level 4 of the World Lottery Association’s Responsible GamingFramework, the highest global standard of responsible gaming.</p><img class="indent shrink" src="images_cms/our_moments/2012.jpg" alt="">
+                </div>
+              </div>
+              <div class="milestone ms--out milestone--card col-md-4" id="ms2012_2">
+                <div class="row">
+                  <h5>Sport and Social Responsibility Award</h5>
+                  <p class="indent">
+                    26 Jan – Tote Board and Singapore Pools received the 2011 International OlympicCommittee (IOC) – ‘Sport and Social Responsibility’ award. This is an award presented to
+                    honour a prominent figure or organization within the sporting community.
+                  </p><img class="indent" src="images_cms/our_moments/2012-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-2" id="ms2013">
+                <div class="row">
+                  <div class="white-square">
+                    <h3>2013</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>Singapore Pools building opens</h5>
+                  </div>
+                  <p class="indent">
+                    28 Apr – The official opening of the Singapore Pools building by Mrs Josephine Teo, thenMinister of State for Finance and Transport.</p><br class="desktop-only">
+                  <div class="white-bg">
+                    <h5>Gold for iShine</h5>
+                  </div>
+                  <p class="indent">
+                    26 Jun - The iShine staff voluntary team - Tender, Love & Care - received the Gold ServiceAward from Singapore Children’s Society for their commitment and support in the past
+                    decade.
+                  </p><img class="indent" src="images_cms/our_moments/2013.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-8" id="ms2014">
+                <div class="row">
+                  <h3>2014</h3>
+                  <h5>Keeping to world's highest standard</h5>
+                  <p class="indent indent-r">
+                    30 Apr - We were awarded the international accreditation for high standard of informationsecurity and integrity controls by World Lottery Association.</p><img class="indent shrink" src="images_cms/our_moments/2014.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-3" id="ms2015">
+                <div class="row">
+                  <div class="white-square">
+                    <h3>2015</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>President's Challenge Pinnacle Award</h5>
+                  </div>
+                  <p class="indent">
+                    13 Mar – We were conferred with the President’s Challenge Pinnacle Award. The award isthe highest honour in corporate giving and was presented by then President Tony Tan.</p><img class="indent" src="images_cms/our_moments/2015.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-8" id="ms2016">
+                <div class="row">
+                  <div class="white-bg">
+                    <h3>2016</h3>
+                  </div>
+                  <div class="white-bg">
+                    <h5>Caring for winners</h5>
+                  </div>
+                  <p class="indent">
+                    4 Mar – In partnership with MoneySENSE, a national financial education initiative,Singapore Pools launched the "Care for Winners" programme with the aim of equipping
+                    prize winners with fundamental wealth management skills.
+                  </p>
+                  <div class="video-container indent paused">
+                    <video poster="images_cms/our_moments/video-bg.jpg" style="background-image: url('images_cms/our_moments/video-bg.jpg')" controlsList="nodownload">
+                      <source src="images_cms/milestones/WWP_video_ENG-1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-2" id="ms2016_2">
+                <div class="row">
+                  <div class="white-h">
+                    <h5>Sharing more resources</h5>
+                  </div>
+                  <p class="indent">
+                    2 Sep – We supported the fundraising efforts of various charities by availing our networkof 300 retail outlets for the sale of donation draw tickets. For this initiative, we achieved
+                    the S$1 million mark in the Charity Draw Sales Programme.
+                  </p><img class="indent" src="images_cms/our_moments/2016.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-3 col-md-offset-3" id="ms2016_3">
+                <div class="row">
+                  <div class="milestone ms--out milestone--card">
+                    <div class="white-h">
+                      <h5>Remote gambling</h5>
                     </div>
-                    <div class="col-md-5 col-md-offset-1">
-                      <div id="item-19" class="strike floating-item long-height-version">
-                        <div class="manic-image-container">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2002-02.jpg"
-                            data-image-tablet="images_cms/milestones/year-2002-02-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2002-02-mobile.jpg" alt="">
-                        </div>
-                      </div>
+                    <p>
+                      30 Sep – We were awarded Exempt Operator status under the Remote Gambling Act,which allows us to offer remote gambling services for existing products, under a stringent
+                      set of conditions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-md-offset-1" id="ms2016_4">
+                <div class="row">
+                  <div class="milestone ms--out milestone--card">
+                    <div class="white-h">
+                      <h5>Online betting</h5>
                     </div>
-
-                    <div class="col-md-12"></div>
-
-                    <div class="col-md-3 col-md-offset-2">
-                      <div id="item-20" class="floating-item">
-                        <div class="scroll-target" data-value="2003"></div> 
-                        <div class="text-container">
-                          <h2>2003</h2>
-                          <p>iShine, a staff community programme that promotes 'I Serve from the Heart and In Nurturing Everyone' was initiated to support the community at large.</p>
-                        </div>
-                        <div class="manic-image-container">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2003.jpg"
-                            data-image-tablet="images_cms/milestones/year-2003-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2003-mobile.jpg" alt="">
-                        </div>
-                      </div>
+                    <p class="indent">
+                      25 Oct - Launched the enhanced Singapore Pools account service, which made itpossible for customers to place bets online.</p>
+                  </div>
+                  <div class="milestone ms--out milestone--card">
+                    <div class="white-bg">
+                      <h5>Supporting national defence</h5>
                     </div>
-                    <div class="col-md-3">
-                      <div id="item-22" class="floating-item">
-                        <div class="scroll-target" data-value="2004"></div> 
-                        <div class="text-container">
-                          <h2>2004</h2>
-                          <p>Joined Singapore Totalisator Board with Singapore Pools managing 4D, TOTO, Singapore Sweep and football betting.</p>
-                        </div>                        
-                      </div>
-                      <div id="item-21" class="floating-item">
-                        <div class="scroll-target" data-value="2005"></div> 
-                        <div class="text-container">
-                          <h2>2005</h2>
-                          <p>A new telephone betting service (Singapore Pools Account) was set up on 13 August 2005.</p>
-                        </div>                        
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-md-offset-1">
-                      
-                      <div id="item-23" class="floating-item">
-                        <div class="scroll-target" data-value="2007"></div> 
-                        <div class="text-container">
-                          <h2>2007</h2>
-                          <p>Started the annual Responsible Gaming Programme - aimed to educate and create a responsible gaming environment for customers.</p>
-                        </div>                        
-                        <div class="manic-image-container">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2007.jpg"
-                            data-image-tablet="images_cms/milestones/year-2007-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2007-mobile.jpg" alt="">
-                        </div>                 
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-md-offset-2">
-                      <div id="item-24" class="floating-item long-height-version">
-                        <div class="scroll-target" data-value="2008"></div> 
-                        <div class="text-container">
-                          <h2>2008</h2>
-                          <p>Launched sports betting on Formula One (F1) races on 4 March 2008.</p>
-                        </div>
-                        <div class="manic-image-container">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2008.jpg"
-                            data-image-tablet="images_cms/milestones/year-2008-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2008-mobile.jpg" alt="">                          
-                        </div>
-                      </div>
-                    </div>   
-                  </div> <!-- end content-group-5 -->
-
-                  <div class="col-md-12"></div>
-
-                  <div id="content-group-6" class="page-content-group">
-                    <div class="col-md-3 col-md-offset-2">
-                      <div id="trigger-content-group-6" class="scroll-target" data-value="2010s"></div>
-                      <div id="item-25" class="floating-item">
-                        <div class="scroll-target" data-value="2010"></div> 
-                        <div class="text-container">                                    
-                          <h2>2010</h2>
-                          <p>Introduced the Responsible Gaming Ambassador Programme and the Winners Wealth Management Programme to promote responsible gaming and educate winners about wealth management.</p>
-                        </div>
-                      </div>
-                      <div id="item-26" class="floating-item">
-                        <div class="text-container">
-                          <p>Opened premium ‘live’ sports entertainment venues, LiveWire, at Marina Bay Sands and Resorts World Sentosa. </p>
-                        </div>
-                        <div class="manic-image-container visible-xs visible-sm">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2010.jpg"
-                            data-image-tablet="images_cms/milestones/year-2010-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2010-mobile.jpg" alt="">   
-                        </div>
-                      </div>
-                      <div id="item-27" class="floating-item">
-                        <div class="scroll-target" data-value="2012"></div>
-                        <div class="text-container">
-                          <h2>2012</h2>
-                          <p>Achieved Level 4 of the World Lottery Association’s Responsible Gaming Workframe, the highest global standard of responsible gaming.</p>
-                        </div>
-                        <div class="text-container">
-                          <p>Kicked off the Football With A Heart (FWAH) fundraising event and raised $350,000 for nine beneficiaries.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-7">
-                      <div id="item-28" class="floating-item hidden-xs hidden-sm">
-                        <div class="manic-image-container">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2010.jpg"
-                            data-image-tablet="images_cms/milestones/year-2010-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2010-mobile.jpg" alt="">   
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-11 col-md-offset-1">
-                      <div id="item-29" class="floating-item longest-height-version">     
-                        <div class="scroll-target" data-value="2013"></div>
-                        <div class="text-container absolute-version">
-                          <h2>2013</h2>
-                          <p>Opened its 12-storey building at Middle Road. The building won the Building and Construction Authority’s Green Mark GoldPLus Award.</p>
-                        </div>
-                        <div class="manic-image-container">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2013.jpg"
-                            data-image-tablet="images_cms/milestones/year-2013-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2013-mobile.jpg" alt="">      
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 col-md-offset-2">
-                      <div id="item-30" class="hidden-sm hidden-xs floating-item long-height-version">
-                        <div class="scroll-target" data-value="2015"></div>
-                        <div class="manic-image-container full-col-width-version-2 has-show-all">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2015.jpg"
-                            data-image-tablet="images_cms/milestones/year-2015-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2015-mobile.jpg" alt="">      
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 col-md-offset-1">
-                      <div id="item-31" class="floating-item long-height-version">
-                        <div class="text-container">
-                          <h2>2015</h2>
-                          <p>Achieved re-certification of Level 4 of the World Lottery Association Responsible Gaming Framework.</p>                    
-                        </div>
-                        <!-- <div class="manic-image-container full-col-width-version-2">                          
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2015-02.jpg"
-                            data-image-tablet="images_cms/milestones/year-2015-02-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2015-02-mobile.jpg" alt="">      
-                        </div> -->
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 col-md-offset-1">
-                      <div id="item-32" class="floating-item">
-                        <div class="scroll-target" data-value="2016"></div>
-                        <div class="text-container">
-                          <h2>2016</h2>
-                          <p>An enhanced Singapore Pools Account service was introduced to allow customers to place bets online.</p>
-                        </div>
-                        <!-- <div class="manic-image-container full-col-width-version">
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2016.jpg"
-                            data-image-tablet="images_cms/milestones/year-2016-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2016-mobile.jpg" alt="">      
-                        </div> -->
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 col-md-offset-1">
-                      <div id="item-33" class="floating-item long-height-version">
-                        <div class="scroll-target" data-value="2017"></div>
-                        <div class="text-container">
-                          <h2>2017</h2>
-                          <p>Stay dedicated in its decade-long resource sharing commitment to create shared values with the community by providing rent-free units to social enterprises and availing its retail networks for charity.</p>                    
-                        </div>
-                        <div class="manic-image-container full-col-width-version-2">                          
-                          <img src="" 
-                            data-image-desktop="images_cms/milestones/year-2017.jpg"
-                            data-image-tablet="images_cms/milestones/year-2017-tablet.jpg"
-                            data-image-mobile="images_cms/milestones/year-2017-mobile.jpg" alt="">      
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- end content-group-6 -->                              
-
-                </div> <!-- end page-milestones-content -->
-
-              <!-- </div> -->
-
-              <div id="end-sticky-trigger" class="col-md-12"></div>    
-
-            <!-- </div> --> <!-- end row -->
-
+                    <p class="indent">
+                      31 Oct – We received the NS Mark, a national-level accreditation scheme whichrecognises business and organisations with policies and human resource practices that
+                      support National Service and Total Defence.
+                    </p><img class="indent" src="images_cms/our_moments/2016-2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="milestone ms--out milestone--card col-md-4 col-md-offset-2" id="ms2016_5">
+                <div class="row">
+                  <div class="white-h">
+                    <h5>World Lottery Summit</h5>
+                  </div>
+                  <p class="indent">
+                    6 to 9 Nov - Co-hosted the World Lottery Summit 2016 with Marina Bay Sands, whichattracted over 1000 attendees, exhibitors, keynote speakers from all over the world to
+                    come together to share experiences, learn about the latest technologies and
+                    developments and connect with thought leaders.
+                  </p><img class="indent" src="images_cms/our_moments/2016-3.jpg" alt="">
+                </div>
+              </div>
+            </div>
           </div>
-
-        </article> <!-- end page-milestones-content-container -->            
-
-      </div> <!-- #page-wrapper-content -->
-  </div> <!-- #page-wrapper -->
+          <div class="col-md-12">
+            <div id="navStickyEnd"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <?php include "includes/footer_desktop.php"; ?>
   <?php include "includes/footer_mobile.php"; ?>

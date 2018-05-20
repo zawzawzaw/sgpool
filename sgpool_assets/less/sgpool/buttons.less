@@ -157,6 +157,8 @@
   -moz-appearance: none;
   appearance: none;
 
+  border-radius: 0px;
+
   &:hover{
     // .transition-in-single (background-color, 0.2s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.2s);
     // background-color: @grey;
@@ -167,11 +169,15 @@
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.1em;
-    width: 100%;
-    display: block;
+    /*width: 100%;*/
+    display: inline-block;
     text-align: center;
     padding-top: 9px;
     padding-bottom: 10px;
+  }
+
+  @media all and (max-width: 480px) {
+    min-width: 230px; 
   }
 }
 

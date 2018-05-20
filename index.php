@@ -19,7 +19,7 @@ ob_start();
 <body class="<?php echo $current_page; ?>"> <!-- home-expand-header-version -->
   <!-- only the home page has the class home-expand-header-version by default -->
 
-  <?php include "includes/preloader.php"; ?>
+  <?php //include "includes/preloader.php"; ?>
 
   <?php include "includes/header_desktop.php"; ?>
   <?php include "includes/header_mobile.php"; ?>
@@ -599,16 +599,16 @@ ob_start();
                         <div class="event-box-bg"></div>
                         <!-- <div class="tag-container"><h6>Public</h6></div> -->
                         <div class="manic-image-container-02 hidden-md hidden-sm hidden-xs">
-                          <img src="images_cms/home/event-05v2.jpg" class="img-responsive" alt="">                          
+                          <img src="images_cms/home/event-05v3.jpg" class="img-responsive" alt="">                          
                         </div>
                         <div class="manic-image-container-02 visible-md">
-                          <img src="images_cms/home/event-05-tablet-landscapev2.jpg" class="img-responsive" alt="">                          
+                          <img src="images_cms/home/event-05-tablet-landscapev3.jpg" class="img-responsive" alt="">                          
                         </div>
                         <div class="manic-image-container-02 visible-sm">
-                          <img src="images_cms/home/event-05-tabletv2.jpg" class="img-responsive" alt="">                          
+                          <img src="images_cms/home/event-05-tabletv3.jpg" class="img-responsive" alt="">                          
                         </div>
                         <div class="manic-image-container-02 visible-xs">
-                          <img src="images_cms/home/event-05-mobilev2.jpg" class="img-responsive" alt="">                          
+                          <img src="images_cms/home/event-05-mobilev3.jpg" class="img-responsive" alt="">                          
                         </div>
                         <div class="text-container">
                           <!-- <h6>FUNDRAISING TOURNAMENT</h6> -->
@@ -627,7 +627,7 @@ ob_start();
 
                     -->
 
-                    <div class="col-md-4 no-padding-mobile page-home-event-box-slider-item" data-desktop-url="events.html#3" data-mobile-url="events-community-marketplace.html">
+                    <div class="col-md-4 no-padding-mobile page-home-event-box-slider-item" data-desktop-url="events.html#3" data-mobile-url="events-concert.html">
                       <div class="page-home-event-box">
                         <div class="event-box-bg"></div>
                         <div class="tag-container"><h6>Public</h6></div>
@@ -719,7 +719,7 @@ ob_start();
                   <p>Our 50 years of commitment for community <br class="hidden-xs hidden-sm"> purpose and benefit. </p>
                   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam minima aut, fuga libero adipisci tempora! Nul.</p> -->
 
-                  <a href="javascript:void(0);" class="square-cta">see our moments</a>
+                  <a href="our-moments.html" class="square-cta">see our moments</a>
                 </div>
               </div>
             </div>
@@ -734,7 +734,7 @@ ob_start();
                 <div class="text-container">
                   <h2>Our Heritage</h2>
                   <p>Take a walk down our memory lane.</p>
-                  <a href="javascript:void(0);" class="square-cta">visit our heritage</a>
+                  <a href="our-heritage.html" class="square-cta">visit our heritage</a>
                 </div>
               </div>
             </div>
